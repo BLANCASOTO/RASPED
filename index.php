@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ingresa</title>
   </head>
-  <body background = "https://image.ibb.co/cRhdnv/rasped_con_nombre.jpg" width="100%">
+  <body background = "https://image.ibb.co/cRhdnv/rasped_con_nombre.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    .img-responsive
+    <img src="..." class="img-responsive" alt="Imagen responsive">
     <p>
       ingresa a un nuevo usuario 
     </p>
