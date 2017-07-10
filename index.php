@@ -9,17 +9,14 @@
   </head>
   <body background = "https://image.ibb.co/cRhdnv/rasped_con_nombre.jpg">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
-    
-    <!--no permite el zoom-->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  <!--no permite el zoom-->
+   
 <canvas id="myCanvas" width="250" height="300"
-style="border:1px solid #d3d3d3;">
+ctx.beginPath();
+               ctx.arc(75,75,50,0,Math.PI*2,true); 
 Your browser does not support the HTML5 canvas tag.</canvas>
 
-ctx.beginPath();
-               ctx.arc(75,75,50,0,Math.PI*2,true);
-<p><button onclick="myCanvas()">Try it</button></p>
+<p><button onclick="myCanvas()">Try it</button></p> <!--aparecer imagemn atraves de boton-->
 
 <script>
 function myCanvas() {
@@ -31,7 +28,7 @@ function myCanvas() {
    
     <img src="https://image.ibb.co/cRhdnv/rasped_con_nombre.jpg" class="img-responsive" alt="Imagen responsive">
     <p>
-      ingresa a un nuevo usuario 
+      Bienvenigo
     </p>
   </body>
 </HTML>
