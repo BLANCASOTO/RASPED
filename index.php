@@ -6,12 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ingresa</title>
-  </head>
-  <body background = "https://image.ibb.co/cRhdnv/rasped_con_nombre.jpg">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  <!--no permite el zoom-->
-   
-     <style>
+    <style>
          #test {
             width: 100px;
             height:100px;
@@ -39,5 +34,11 @@
             }
          }
       </script>
+  </head>
+  <body id="test" onload="dibujaForma();" background = "https://image.ibb.co/cRhdnv/rasped_con_nombre.jpg">
+      <canvas id="mycanvas"></canvas>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  <!--no permite el zoom-->
+  
   </body>
 </HTML>
