@@ -11,24 +11,33 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  <!--no permite el zoom-->
    
-<canvas id="myCanvas" width="250" height="300"
-ctx.beginPath();
-               ctx.arc(75,75,50,0,Math.PI*2,true); 
-Your browser does not support the HTML5 canvas tag.</canvas>
+     <style>
+         #test {
+            width: 100px;
+            height:100px;
+            margin: 0px auto;
+         }
+      </style>
+      <script type="text/javascript">
+         function dibujaForma(){
+            // Toma el elemento canvas usando el DOM
+            var canvas = document.getElementById('mycanvas');
 
-<p><button onclick="myCanvas()">Try it</button></p> <!--aparecer imagemn atraves de boton-->
+            // Asegurate de no ejecutar el canvas en navegadores que no lo soporten
+            if (canvas.getContext){
+               // usa getContext para empezar al dibujar en el canvas
+               var ctx = canvas.getContext('2d');
 
-<script>
-function myCanvas() {
-    var c = document.getElementById("myCanvas");
-    var ctx = c.getContext("2d");
-    var img = document.getElementById("scream");
-    ctx.drawImage(img,10,10);
-}
-   
-    <img src="https://image.ibb.co/cRhdnv/rasped_con_nombre.jpg" class="img-responsive" alt="Imagen responsive">
-    <p>
-      Bienvenigo
-    </p>
+               // Dibuja Formas
+               ctx.beginPath();
+               ctx.arc(75,75,50,0,Math.PI*2,true);  // Circulo exterior
+              
+               
+               ctx.stroke();
+            } else {
+               alert('Necesitas Safari o Firefox 1.5+ para ver esta demo.');
+            }
+         }
+      </script>
   </body>
 </HTML>
