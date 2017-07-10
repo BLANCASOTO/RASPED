@@ -11,14 +11,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> //evita zoom
     var canvas=document.getElementById("canvas");
-    ctx.beginPath();
+var ctx=c.getContext("2d");
+        ctx.beginPath();
 ctx.strokeStyle="red";
 ctx.moveTo(100,100);
 ctx.lineTo(150,150);
 ctx.lineTo(100,150);
 ctx.closePath();
 ctx.stroke();
-var ctx=c.getContext("2d");
     <img src="https://image.ibb.co/cRhdnv/rasped_con_nombre.jpg" class="img-responsive" alt="Imagen responsive">
     <p>
       ingresa a un nuevo usuario 
