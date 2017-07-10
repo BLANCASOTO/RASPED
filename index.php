@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ingresa</title>
   </head>
-  <body background = "https://ibb.co/fWtjSv">
+  <body background = "https://image.ibb.co/cRhdnv/rasped_con_nombre.jpg">
     
     <p>
       ingresa a un nuevo usuario 
