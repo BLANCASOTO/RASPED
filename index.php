@@ -12,15 +12,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
     
     <!--no permite el zoom-->
-    var canvas=document.getElementById("canvas");
-         ctx.beginPath();
-ctx.strokeStyle="red";
-ctx.moveTo(100,100);
-ctx.lineTo(150,150);
-ctx.lineTo(100,150);
-ctx.closePath();
-ctx.stroke();
-var ctx=c.getContext("2d");
+ img id="scream" src="https://image.ibb.co/cRhdnv/rasped_con_nombre.jpg">
+
+<p>Canvas to fill:</p>
+<canvas id="myCanvas" width="250" height="300"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<p><button onclick="myCanvas()">Try it</button></p>
+
+<script>
+function myCanvas() {
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("scream");
+    ctx.drawImage(img,10,10);
+}
    
     <img src="https://image.ibb.co/cRhdnv/rasped_con_nombre.jpg" class="img-responsive" alt="Imagen responsive">
     <p>
