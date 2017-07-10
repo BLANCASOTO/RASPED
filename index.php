@@ -9,7 +9,7 @@
   </head>
   <body background = "https://image.ibb.co/cRhdnv/rasped_con_nombre.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <img src="..." class="img-responsive" alt="Imagen responsive">
+    <img src="https://image.ibb.co/cRhdnv/rasped_con_nombre.jpg" class="img-responsive" alt="Imagen responsive">
     <p>
       ingresa a un nuevo usuario 
     </p>
