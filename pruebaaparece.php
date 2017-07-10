@@ -3,7 +3,7 @@
 <body>
 
 <p>Image to use:</p>
-<img id="scream" src="img_the_scream.jpg" alt="The Scream" width="220" height="277">
+<img id="scream" src="https://image.ibb.co/cRhdnv/rasped_con_nombre.jpg" alt="The Scream" width="220" height="277">
 
 <p>Canvas to fill:</p>
 <canvas id="myCanvas" width="250" height="300"
