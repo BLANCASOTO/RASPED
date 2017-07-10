@@ -25,7 +25,7 @@
 
                // Dibuja Formas
                ctx.beginPath();
-               ctx.arc(75,75,50,0,Math.PI*2,true);  // Circulo exterior
+               ctx.arc(200,75,50,0,Math.PI*2,true);  // Circulo exterior
               
                
                ctx.stroke();
