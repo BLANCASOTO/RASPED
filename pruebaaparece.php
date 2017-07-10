@@ -10,7 +10,7 @@
 style="border:1px solid #d3d3d3;">
 Your browser does not support the HTML5 canvas tag.</canvas>
 
-<p><button onclick="myCanvas()">Try it</button></p>
+// <p><button onclick="myCanvas()">Try it</button></p>
 
 <script>
 function myCanvas() {
