@@ -7,7 +7,7 @@
     <title>ingresa</title>
   </head>
   <body background = "https://image.ibb.co/cRhdnv/rasped_con_nombre.jpg" width="100%">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <p>
       ingresa a un nuevo usuario 
     </p>
