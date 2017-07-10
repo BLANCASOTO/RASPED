@@ -13,12 +13,12 @@
     
     <!--no permite el zoom-->
 
-ctx.beginPath();
-               ctx.arc(75,75,50,0,Math.PI*2,true);
 <canvas id="myCanvas" width="250" height="300"
 style="border:1px solid #d3d3d3;">
 Your browser does not support the HTML5 canvas tag.</canvas>
 
+ctx.beginPath();
+               ctx.arc(75,75,50,0,Math.PI*2,true);
 <p><button onclick="myCanvas()">Try it</button></p>
 
 <script>
