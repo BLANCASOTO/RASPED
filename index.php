@@ -12,9 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
     
     <!--no permite el zoom-->
- img id="scream" src="https://image.ibb.co/cRhdnv/rasped_con_nombre.jpg">
 
-<p>Canvas to fill:</p>
+
 <canvas id="myCanvas" width="250" height="300"
 style="border:1px solid #d3d3d3;">
 Your browser does not support the HTML5 canvas tag.</canvas>
