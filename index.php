@@ -15,7 +15,7 @@
       </style>
       <script type="text/javascript">
          function dibujaForma(){
-            // Toma el elemento canvas usando el DOm
+            // Toma el elemento canvas usando el DOM
             var canvas = document.getElementById('mycanvas');
            lienzo.fillStyle="rgb(#26C6DA)";
 
