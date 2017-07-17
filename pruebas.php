@@ -27,7 +27,7 @@ function dibujar() {
     lienzo.stroke();    
   }
 }
-
+//intento
 </script>
 
 </head>
