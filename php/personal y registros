@@ -1,0 +1,18 @@
+SELECT PER.id_personal,
+CUP.fk_sede as sede,
+CUP.cupo as cupo,
+PER.nombre_personal,
+PER.apellido_p,
+PER.apellido_m,
+TEL.fk_lada as lada,
+TEL.telefono,
+PER.contrasena,
+HOR.hr_nombre as horario,
+PUE.nombre_puesto as puesto,
+USU.usuario
+FROM personal PER, telefonos TEL, cupos CUP, horarios HOR, puestos PUE,usuarios USU
+WHERE PER.fk_cupo = CUP.id_cupo and
+PER.fk_telefono = TEL.id_telefono and
+PER.fk_horario = HOR.id_horario and
+PER.fk_puesto = PUE.id_puesto and
+PER.fk_usuario = USU.id_usuario;
