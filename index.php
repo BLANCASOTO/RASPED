@@ -60,7 +60,7 @@ background-size: cover;
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  <!--no permite el zoom-->
   
+<!-- imagen en la nube https://image.ibb.co/eY4cLF/background.jpg-->
   </body>
 </HTML>
 
-// imagen en la nube https://image.ibb.co/eY4cLF/background.jpg
