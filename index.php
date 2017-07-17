@@ -27,7 +27,8 @@
                // Dibuja Formas
                ctx.beginPath();
                ctx.arc(200,75,50,0,Math.PI*2,true);  // Circulo exterior
-              lienzo.fillStyle="rgb(#2EC8D5)";
+              // lienzo.fillStyle="rgb(#2EC8D5)";
+               lienzo.strokeStyle="rgb(0,0,255)";
               
                
                ctx.stroke();
