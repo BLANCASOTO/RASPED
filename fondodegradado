@@ -8,7 +8,7 @@
 
   // gradiente lineal horizontal
   var gradienteLineal = contexto.createLinearGradient(120,0,220,0); 
-  gradienteLineal.addColorStop(0, 'rgb(#00BCD4)');
+  gradienteLineal.addColorStop(0, 'rgb(0, 188, 212)');
   gradienteLineal.addColorStop(0.5, '#fff');
   gradienteLineal.addColorStop(1, 'rgb(50,220,0)');
   contexto.fillStyle = gradienteLineal;
