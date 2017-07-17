@@ -12,7 +12,7 @@
             width: 200px;
             height:200px;
             margin: 0px auto;
-           no-repeat center center fixed;
+        
 
 -webkit-background-size: cover;
 
