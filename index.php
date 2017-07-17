@@ -7,10 +7,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ingresa</title>
     <style>
-         #test {
+      //css   
+      #test {
             width: 200px;
             height:200px;
             margin: 0px auto;
+           no-repeat center center fixed;
+
+-webkit-background-size: cover;
+
+-moz-background-size: cover;
+
+-o-background-size: cover;
+
+background-size: cover;
+}
+ 
+           
+           
+           
+           
          }
       </style>
       <script type="text/javascript">
@@ -39,6 +55,7 @@
       </script>
   </head>
   <body id="test" onload="dibujaForma();" background = "https://image.ibb.co/eY4cLF/background.jpg">
+    
       <canvas id="mycanvas"></canvas>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  <!--no permite el zoom-->
