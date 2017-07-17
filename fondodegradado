@@ -9,9 +9,9 @@
  
  // gradiente lineal diagonal
   var gradienteLineal = contexto.createLinearGradient(230,0,330,100); 
-  gradienteLineal.addColorStop(0, 'rgb(255,0,0)');
+  gradienteLineal.addColorStop(0, 'rgb(117, 117, 117)');
   gradienteLineal.addColorStop(0.5, '#fff');
-  gradienteLineal.addColorStop(1, 'rgb(50,220,0)');
+  gradienteLineal.addColorStop(1, 'rgb(189, 189, 189)');
   contexto.fillStyle = gradienteLineal;
   contexto.fillRect(230,0,100,100); 
    
