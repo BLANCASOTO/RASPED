@@ -19,7 +19,7 @@
             var canvas = document.getElementById('mycanvas');
            lienzo.fillStyle="rgb(#26C6DA)";
 
-            // Asegurate de no ejecutar el canvas en navegadores que no lo soporten
+            // Asegurate de no ejecutar el canvas en navegadores qe no lo soporten
             if (canvas.getContext){
                // usa getContext para empezar al dibujar en el canvas
                var ctx = canvas.getContext('2d');
