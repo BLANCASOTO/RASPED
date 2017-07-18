@@ -11,31 +11,29 @@
       #test {
         /* Este es un comentario en CSS  */
 }
-
-         
-      </style>
+    </style>
       <script type="text/javascript">
          function dibujaForma(){
-            // Toma el elemento canvas usando el DOm
+            // Toma el elemento canvas usando el DOM
            
             var canvas = document.getElementById('mycanvas');
            lienzo.fillStyle="rgb(#26C6DA)";
 
             // Asegurate de no ejecutar  canvas en navegadores qe no lo soporten
-            if (canvas.getContext){
+           // if (canvas.getContext){
                // usa getContext para empezar al dibujar en el canvas
-               var ctx = canvas.getContext('2d');
+             //  var ctx = canvas.getContext('2d');
 
                // Dibuja Formas
-               ctx.beginPath();
-               ctx.arc(200,75,50,0,Math.PI*2,true);  // Circulo exterior
+               //ctx.beginPath();
+              // ctx.arc(200,75,50,0,Math.PI*2,true);  // Circulo exterior
               // lienzo.fillStyle="rgb(#2EC8D5)";
-               lienzo.strokeStyle="rgb(0,0,255)";
+             //  lienzo.strokeStyle="rgb(0,0,255)";
               
                
-               ctx.stroke();
-            } else {
-               alert('Necesitas Safari o Firefox 1.5+ para ver esta demo.');
+               //ctx.stroke();
+           // } else {
+             //  alert('Necesitas Safari o Firefox 1.5+ para ver esta demo.');
             }
          }
       </script>
@@ -43,12 +41,9 @@
   
     <body id="test" onload="dibujaForma();" background = "https://image.ibb.co/eY4cLF/background.jpg">
       <canvas id="mycanvas"></canvas>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  
-no permite el zoom
-  
-  
-<!-- imagen en la nube https://image.ibb.co/eY4cLF/background.jpg-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">    
   </body>
 </HTML>
 
+
+<!-- imagen en la nube https://image.ibb.co/eY4cLF/background.jpg-->
