@@ -17,7 +17,6 @@
 
         
         
-background-size:  background-size[ background-size]
 body{
 
 background: "https://image.ibb.co/eY4cLF/background.jpg" no-repeat center center fixed;
@@ -63,6 +62,7 @@ background-size: cover;
   
     <body id="test" onload="dibujaForma();" background = "https://image.ibb.co/eY4cLF/background.jpg">
     
+background-size:  background-size[ background-size]
       <canvas id="mycanvas"></canvas>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  
