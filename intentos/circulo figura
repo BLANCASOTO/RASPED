@@ -6,6 +6,9 @@
 
 <P>Hola Mundo</P>
 
+<canvas id="micanvas" style="width : 400px ; height : 200px ; border : 1px black solid ;">
+
+
 
 var context = document.querySelector("#micanvas").getContext('2d');
 context.beginPath();
@@ -16,10 +19,8 @@ context.fill();
 context.stroke();
 context.closePath();
 
-
-
-<canvas id="micanvas" style="width : 400px ; height : 200px ; border : 1px black solid ;">
 </canvas>
+
 
 </BODY>
 </HTML>
