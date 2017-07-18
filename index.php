@@ -17,7 +17,7 @@
 
         
         
-body{
+/*body{
 
 background: "https://image.ibb.co/eY4cLF/background.jpg" no-repeat center center fixed;
         
@@ -26,6 +26,7 @@ background: "https://image.ibb.co/eY4cLF/background.jpg" no-repeat center center
 -o-background-size: cover;
 background-size: cover;
 }
+ */
  
            
            
