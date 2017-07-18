@@ -19,7 +19,9 @@ context.fill();
 context.stroke();
 context.closePath();
 
-</script>
+
+
 </canvas>
+</script>
 </BODY>
 </HTML>
