@@ -15,12 +15,16 @@
             margin: 0px auto;
         */
 
+        
+        
+
+body{
+
+background: "https://image.ibb.co/eY4cLF/background.jpg" no-repeat center center fixed;
+        
 -webkit-background-size: cover;
-
 -moz-background-size: cover;
-
 -o-background-size: cover;
-
 background-size: cover;
 }
  
@@ -56,11 +60,13 @@ background-size: cover;
          }
       </script>
   </head>
-  <body id="test" onload="dibujaForma();" background = "https://image.ibb.co/eY4cLF/background.jpg">
+  <!--
+   /* <body id="test" onload="dibujaForma();" background = "https://image.ibb.co/eY4cLF/background.jpg">
     
       <canvas id="mycanvas"></canvas>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  <!--no permite el zoom-->
+  
   
 <!-- imagen en la nube https://image.ibb.co/eY4cLF/background.jpg-->
   </body>
