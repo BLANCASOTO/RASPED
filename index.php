@@ -34,6 +34,19 @@
                //ctx.stroke();
            // } else {
              //  alert('Necesitas Safari o Firefox 1.5+ para ver esta demo.');
+           .circulo {
+     width: 100px;
+     height: 100px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #5cb85c;
+}
+           
+           
+           
+           
+           
             }
          }
       </script>
