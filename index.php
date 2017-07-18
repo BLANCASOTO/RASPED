@@ -9,11 +9,11 @@
     <style>
       //css   
       #test {
-        /* Este es un comentario en CSS */
+        /* Este es un comentario en CSS 
              width: 200px;
             height:200px;
             margin: 0px auto;
-        
+        */
 
         
         
@@ -60,7 +60,7 @@ background-size: cover;
          }
       </script>
   </head>
-  <!--
+  
     <body id="test" onload="dibujaForma();" background = "https://image.ibb.co/eY4cLF/background.jpg">
     
       <canvas id="mycanvas"></canvas>
