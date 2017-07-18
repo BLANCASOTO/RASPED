@@ -9,7 +9,6 @@
 
 <canvas id="micanvas" style="width : 400px ; height : 200px ; border : 1px black solid ;"
   <script type="text/javascript">
-
 var context = document.querySelector("#micanvas").getContext('2d');
 context.beginPath();
 context.fillStyle = "#00B0FF";
