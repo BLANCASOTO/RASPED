@@ -1,10 +1,12 @@
 <html>
   <head>
-  <title>Ejemplo 6 Canvas </title>
+  <title> </title>
   <script type="text/javascript">
   function dibujarCanvas(){
   var canvas = document.getElementById('miCanvas');
   var contexto = canvas.getContext('2d');
+  
+  
   // gradiente lineal vertical
   var gradienteLineal = contexto.createLinearGradient(0,0,0,100); 
   gradienteLineal.addColorStop(0, 'rgb(255,0,0)'); // rojo
@@ -38,6 +40,7 @@
    </script>
   </head>
   <body onLoad="dibujarCanvas();">
-  <canvas id="miCanvas" width="450" height="350">Su navegador no soporta Canvas.</canvas>
+  <canvas id="miCanvas" width="900" height="900">Su navegador no soporta Canvas.</canvas>
   </body>
   </html>
+ 
