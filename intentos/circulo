@@ -12,13 +12,15 @@
   gradienteLineal.addColorStop(1, 'rgb(50,220,0)'); // verde
   contexto.fillStyle = gradienteLineal;
   contexto.fillRect(0,0,100,100);
+  
   // gradiente lineal horizontal
-  var gradienteLineal = contexto.createLinearGradient(120,0,220,0); 
-  gradienteLineal.addColorStop(0, 'rgb(255,0,0)');
-  gradienteLineal.addColorStop(0.5, '#fff');
-  gradienteLineal.addColorStop(1, 'rgb(50,220,0)');
-  contexto.fillStyle = gradienteLineal;
-  contexto.fillRect(120,0,100,100);
+  //var gradienteLineal = contexto.createLinearGradient(120,0,220,0); 
+  //gradienteLineal.addColorStop(0, 'rgb(255,0,0)');
+  //gradienteLineal.addColorStop(0.5, '#fff');
+  //gradienteLineal.addColorStop(1, 'rgb(50,220,0)');
+  //contexto.fillStyle = gradienteLineal;
+  //contexto.fillRect(120,0,100,100);
+  
  // gradiente lineal diagonal
   var gradienteLineal = contexto.createLinearGradient(230,0,330,100); 
   gradienteLineal.addColorStop(0, 'rgb(255,0,0)');
