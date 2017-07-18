@@ -4,11 +4,9 @@
   <script type="text/javascript">
   function dibujarCanvas(){
   var canvas = document.getElementById('miCanvas');
-  var contexto = canvas.getContext('2d');
+  var contexto = canvas.getContext('3d');
  
-
   // gradiente radial efecto esfera 
-
   var gradienteRadial = contexto.createRadialGradient(160,160,1,170,150,30);
   gradienteRadial.addColorStop(0, '#FFFFFF');
   gradienteRadial.addColorStop(0.9, 'rgba(255,0,0,1)'); // rojo
@@ -17,7 +15,6 @@
   contexto.fillRect(120,110,150,150);
 
  // gradiente radial uniforme
-
  var gradienteRadial = contexto.createRadialGradient(280,160,1,280,160,190);
   gradienteRadial.addColorStop(0, '#FFFFFF');
   gradienteRadial.addColorStop(0.7, 'rgba(255,0,0,1)'); // rojo
