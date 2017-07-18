@@ -9,11 +9,11 @@
     <style>
       //css   
       #test {
-        /* Este es un comentario en CSS 
-             width: 200px;
-            height:200px;
+        /* Este es un comentario en CSS  */
+             width: 0px auto;
+            height:0px auto;
             margin: 0px auto;
-        */
+       
 
         
         
@@ -61,8 +61,6 @@ background-size: cover;
   </head>
   
     <body id="test" onload="dibujaForma();" background = "https://image.ibb.co/eY4cLF/background.jpg">
-    
-background-size:  background-size[ background-size]
       <canvas id="mycanvas"></canvas>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  
