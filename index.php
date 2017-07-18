@@ -9,10 +9,11 @@
     <style>
       //css   
       #test {
-            width: 200px;
+        /* Este es un comentario en CSS */
+           /*  width: 200px;
             height:200px;
             margin: 0px auto;
-        
+        */
 
 -webkit-background-size: cover;
 
