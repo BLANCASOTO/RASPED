@@ -5,11 +5,7 @@
 <BODY>
 
 <div style="color: blue;">
- <h2> Ejemplo de div y span </h2>
-  <p>
-    Esto es un párrafo dentro de un div,
-    
-    .circulo {
+        .circulo {
      width: 100px;
      height: 100px;
      -moz-border-radius: 50%;
