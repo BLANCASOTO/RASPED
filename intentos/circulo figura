@@ -11,8 +11,7 @@
 
 var context = document.querySelector("#micanvas").getContext('2d');
 context.beginPath();
-context.fillStyle = "red";
-context.strokeStyle="black";
+context.fillStyle = "#00B0FF";
 context.arc(50, 50, 5, 0, 2 * Math.PI, false);
 context.fill();
 context.stroke();
