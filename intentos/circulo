@@ -14,6 +14,7 @@
  contexto.fillStyle = gradienteRadial;
   contexto.fillRect(120,110,150,150);
 
+void arc(in float x, in float y, in float radius, in float startAngle, in float endAngle, in boolean anticlockwise Optional );
 ctx.arc(360,70,50,0,(Math.PI/180)*360,true);
 ctx.fillStyle="#f99";
 ctx.fill();
