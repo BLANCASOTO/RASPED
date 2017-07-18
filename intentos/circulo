@@ -5,19 +5,7 @@
   function dibujarCanvas(){
   var canvas = document.getElementById('miCanvas');
   var contexto = canvas.getContext('2d');
-  
-  
-  // gradiente lineal vertical
-  var gradienteLineal = contexto.createLinearGradient(0,0,0,100); 
-  gradienteLineal.addColorStop(0, 'rgb(255,0,0)'); // rojo
-  gradienteLineal.addColorStop(0.5, '#fff');       // blanco
-  gradienteLineal.addColorStop(1, 'rgb(50,220,0)'); // verde
-  contexto.fillStyle = gradienteLineal;
-  contexto.fillRect(0,0,100,100);
-  
-  
-
-
+ 
 
   // gradiente radial efecto esfera 
 
