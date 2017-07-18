@@ -9,12 +9,10 @@
     <style>
       //css   
       #test {
-        /* Este es un comentario en CSS  
-             width: 0px auto;
+        /* Este es un comentario en CSS  */
+            width: 0px auto;
             height:0px auto;
             margin: 0px auto;
-        */
-
         body{
 
 background: "https://image.ibb.co/eY4cLF/background.jpg" no-repeat center center fixed;
