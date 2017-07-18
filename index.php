@@ -17,7 +17,7 @@
 
         
         
-
+background-size:  background-size[ background-size]*
 body{
 
 background: "https://image.ibb.co/eY4cLF/background.jpg" no-repeat center center fixed;
