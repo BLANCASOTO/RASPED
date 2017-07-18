@@ -6,23 +6,17 @@
 
 <P>Hola Mundo</P>
 
-<h1><span class="red">2</span>
-span.red {
-  background: red;
-   border-radius: 0.8em;
-  -moz-border-radius: 0.8em;
-  -webkit-border-radius: 0.8em;
-  color: #ffffff;
-  display: inline-block;
-  font-weight: bold;
-  line-height: 1.6em;
-  margin-right: 15px;
-  text-align: center;
-  width: 1.6em; 
-}
- 
+<div id="circulo" 
+  height = 100px
+  width =100px
+  display = table-cell
+  text-align = center
+  font-size =36px
+  vertical-align = middle
+  border-radius = 50%
+  background = #8CC657
 
-
+</div>
 
 </BODY>
 </HTML>
