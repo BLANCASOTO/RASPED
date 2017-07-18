@@ -32,6 +32,10 @@ context.closePath();
  contexto.fillStyle = gradienteRadial;
   contexto.fillRect(120,110,150,150);
 
+
+
+  <body onLoad="dibujarCanvas();">
+  <canvas id="miCanvas" width="2000" height="2000">Su navegador no soporta Canvas.</canvas>
 </script>
 </canvas>
 </BODY>
