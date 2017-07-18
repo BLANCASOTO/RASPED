@@ -44,10 +44,9 @@
      -webkit-border-radius: 50%;
      border-radius: 50%;
      background: #5cb85c;
-     </div></div>
+    
 }
-           
-           
+   </div></div>       
            
            
            
