@@ -5,6 +5,7 @@
 <BODY>
 <P>Hola Mundo</P>
 
+<i>comentario</i>
 <canvas id="micanvas" style="width : 400px ; height : 200px ; border : 1px black solid ;">
 
   <script type="text/javascript">
