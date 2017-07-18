@@ -4,7 +4,7 @@
 </HEAD>
 <BODY>
 <P>Hola Mundo</P>
-<canvas id="micanvas" style="width : 800px ; height : 800px ; border : 1px black solid ;">
+<canvas id="micanvas" style="width : 900px ; height : 700px ; border : 1px black solid ;">
 </canvas>
  <script type="text/javascript">
  
@@ -12,7 +12,7 @@
 context.beginPath();
 context.fillStyle = "#40C4FF";
 context.strokeStyle="#40C4FF";
-context.arc(50, 50, 200, 0, 2 * Math.PI, false);
+context.arc(50, 50, 100, 0, 2 * Math.PI, false);
 context.fill();
 context.stroke();
 context.closePath();
