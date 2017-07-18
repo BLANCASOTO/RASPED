@@ -3,12 +3,15 @@
 <TITLE>ejemplo hola mundo</TITLE>
 </HEAD>
 <BODY>
-
 <P>Hola Mundo</P>
 
 <canvas id="micanvas" style="width : 400px ; height : 200px ; border : 1px black solid ;">
 
- <script type="text/javascript">
+  <script type="text/javascript">
+  function dibujarCanvas(){
+  var canvas = document.getElementById('miCanvas');
+  var contexto = canvas.getContext('2d');
+
 
 var context = document.querySelector("#micanvas").getContext('2d');
 context.beginPath();
@@ -18,6 +21,16 @@ context.arc(50, 50, 5, 0, 2 * Math.PI, false);
 context.fill();
 context.stroke();
 context.closePath();
+
+
+ 
+  // gradiente radial efecto esfera 
+  var gradienteRadial = contexto.createRadialGradient(160,160,1,170,150,30);
+  gradienteRadial.addColorStop(0, '#FFFFFF');
+  gradienteRadial.addColorStop(0.9, 'rgba(255,0,0,1)'); // rojo
+  gradienteRadial.addColorStop(1, 'rgba(255,0,0,0)'); // rojo transparente
+ contexto.fillStyle = gradienteRadial;
+  contexto.fillRect(120,110,150,150);
 
 </script>
 </canvas>
