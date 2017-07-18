@@ -14,14 +14,10 @@
  contexto.fillStyle = gradienteRadial;
   contexto.fillRect(120,110,150,150);
 
- // gradiente radial uniforme
- // var gradienteRadial = contexto.createRadialGradient(280,160,1,280,160,190);
-  // gradienteRadial.addColorStop(0, '#FFFFFF');
-  // gradienteRadial.addColorStop(0.7, 'rgba(255,0,0,1)'); // rojo
-  // gradienteRadial.addColorStop(1, 'rgba(255,0,0,1)'); // rojo transparente
-  //contexto.fillStyle = gradienteRadial;
- // contexto.fillRect(230,110,100,1000);
- 
+ctx.arc(360,70,50,0,(Math.PI/180)*360,true);
+ctx.fillStyle="#f99";
+ctx.fill();
+
   }
    </script>
   </head>
