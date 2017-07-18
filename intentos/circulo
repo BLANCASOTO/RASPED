@@ -27,18 +27,18 @@
   gradienteLineal.addColorStop(0.5, '#fff');
   gradienteLineal.addColorStop(1, 'rgb(50,220,0)');
   contexto.fillStyle = gradienteLineal;
-  contexto.fillRect(230,0,100,100); 
+  contexto.fillRect(230,0,100,400); 
 
   // gradiente lineal sobre trazo 
-  var gradienteLineal = contexto.createLinearGradient(0,110,0,210);
-  gradienteLineal.addColorStop(0, 'red'); // rojo
-  gradienteLineal.addColorStop(1, 'white'); // blanco
-  contexto.strokeStyle = gradienteLineal;
-  contexto.strokeRect(10,110,30,100);  
+ // var gradienteLineal = contexto.createLinearGradient(0,110,0,210);
+  //gradienteLineal.addColorStop(0, 'red'); // rojo
+  //gradienteLineal.addColorStop(1, 'white'); // blanco
+  //contexto.strokeStyle = gradienteLineal;
+  //contexto.strokeRect(10,110,30,100);  
 
   // gradiente lineal  sobre relleno
-  contexto.fillStyle = gradienteLineal;
-  contexto.fillRect(50,110,50,100);  
+  //contexto.fillStyle = gradienteLineal;
+  //contexto.fillRect(50,110,50,100);  
 
   // gradiente radial efecto esfera 
 
