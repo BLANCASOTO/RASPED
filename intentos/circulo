@@ -5,15 +5,6 @@
   function dibujarCanvas(){
   var canvas = document.getElementById('miCanvas');
   var contexto = canvas.getContext('2d');
-  var ctx = canvas.getctx(""):
- 
- 
-
-void arc(in float x, in float y, in float radius, in float startAngle, in float endAngle, in boolean anticlockwise Optional );
-
- ctx.arc(360,70,50,0,(Math.PI/180)*360,true);
-ctx.fillStyle="#f99";
-ctx.fill();
 
  
   // gradiente radial efecto esfera 
