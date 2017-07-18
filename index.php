@@ -9,10 +9,11 @@
     <style>
       //css   
       #test {
-        /* Este es un comentario en CSS  */
+        /* Este es un comentario en CSS  
              width: 0px auto;
             height:0px auto;
             margin: 0px auto;
+        */
        
 
         
