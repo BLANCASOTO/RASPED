@@ -13,7 +13,8 @@
   contexto.fillStyle = gradienteLineal;
   contexto.fillRect(0,0,100,100);
 body{
-background: "https://image.ibb.co/eY4cLF/background.jpg" no-repeat center center fixed;
+background: "https://image.ibb.co/mj6BZk/portada_intento.jpg" no-repeat center center fixed;
+<!--background: "https://image.ibb.co/eY4cLF/background.jpg" no-repeat center center fixed;-->
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
