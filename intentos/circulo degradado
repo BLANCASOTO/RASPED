@@ -7,7 +7,7 @@
   var contexto = canvas.getContext('2d');
 
  
-  // gradiente radial efecto esfera jiji
+  // gradiente radial efecto esfera
   var gradienteRadial = contexto.createRadialGradient(160,160,1,170,150,30);
   gradienteRadial.addColorStop(0, '#FFFFFF');
   gradienteRadial.addColorStop(0.9, 'rgba(255,0,0,1)'); // rojo
