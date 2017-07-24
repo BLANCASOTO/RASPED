@@ -8,10 +8,10 @@
 
  
   // gradiente radial efecto esfera
-  var gradienteRadial = contexto.createRadialGradient(160,160,10,170,150,30);
+  var gradienteRadial = contexto.createRadialGradient(160,160,1,170,150,30);
   gradienteRadial.addColorStop(0, '#FFFFFF');
-  gradienteRadial.addColorStop(0.9, 'rgba((41, 182, 246))'); // rojo
-  gradienteRadial.addColorStop(1, 'rgba((128, 216, 255))'); // rojo transparente
+  gradienteRadial.addColorStop(0.9, 'rgba(41, 182, 246)'); // rojo
+  gradienteRadial.addColorStop(1, 'rgba(128, 216, 255)'); // rojo transparente
  contexto.fillStyle = gradienteRadial;
   contexto.fillRect(120,110,150,150);
   
