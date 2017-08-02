@@ -1,54 +1,44 @@
 <!DOCTYPE html>
-<HTML leng="es">
-  <head>
-    <link href="contens/css/bootstrap.css" rel="stylesheet">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ingresa</title>
-    <style>
-      //css   
-      #test {
-        /* Este es un comentario en CSS  */
+<html>
+<h1>
+
+ <MARQUEE  
+
+</h1>
+<head>
+<style>
+body {
+    background-color: 	#00bc98;	
+<div class="rasped2">TEXT
+  </br> 
+  text
+  </div>
 }
-    </style>
-      <script type="text/javascript">
-         function dibujaForma(){
-            // Toma el elemento canvas usando el DOM
-           
-            var canvas = document.getElementById('mycanvas');
-           lienzo.fillStyle="rgb(#26C6DA)";
 
-            // Asegurate de no ejecutar  canvas en navegadores qe no lo soporten
-           // if (canvas.getContext){
-               // usa getContext para empezar al dibujar en el canvas
-             //  var ctx = canvas.getContext('2d');
+</style>
+</head>
+<body>
 
-               // Dibuja Formas
-               //ctx.beginPath();
-              // ctx.arc(200,75,50,0,Math.PI*2,true);  // Circulo exterior
-              // lienzo.fillStyle="rgb(#2EC8D5)";
-             //  lienzo.strokeStyle="rgb(0,0,255)";
-              
-               
-               //ctx.stroke();
-           // } else {
-             //  alert('Necesitas Safari o Firefox 1.5+ para ver esta demo.');
-           
-      
-           
-           
-           
-            }
-         }
-      </script>
-  </head>
-  
-    <body id="test" onload="dibujaForma();" background = "https://image.ibb.co/eY4cLF/background.jpg">
-      <canvas id="mycanvas"></canvas>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">    
-  </body>
-</HTML>
+<p style="text-align: center; "> <img src=https://image.ibb.co/gt2gek/RASPED_BM_icono_Simbolo_Letras.png alt="imagen 3" width="30%">
 
 
-<!-- imagen en la nube https://image.ibb.co/eY4cLF/background.jpg-->
+
+
+<MARQUEE BEHAVIOR=alternate>
+<FONT FACE=arial COLOR=white SIZE=10>
+Bienvenido 
+</MARQUEE> 
+
+
+
+
+<CENTER>
+<MARQUEE WIDTH=19% BGCOLOR=#B2DFDB>
+<FONT FACE= Courier COLOR=#616161 SIZE=5> <!--  color t -->
+Iniciando
+</FONT>
+</MARQUEE> 
+</CENTER>
+</p>
+</body>
+</html>
