@@ -29,16 +29,15 @@ body {
 Bienvenido 
 </MARQUEE> 
 
-
-
-
 <CENTER>
 <MARQUEE WIDTH=19% BGCOLOR=#B2DFDB>
-<FONT FACE= Courier COLOR=#616161 SIZE=5> <!--  color t -->
-Iniciando
+<FONT FACE= Courier COLOR="#BDBDBD" SIZE=6> <!--  color t -->
+<td align="center">  <div  log"><a href="file:///C:/Users/BlancaSoto/Desktop/RASPED/igresa.html">Iniciar</a></div></td>
+
 </FONT>
 </MARQUEE> 
 </CENTER>
 </p>
+
 </body>
 </html>
