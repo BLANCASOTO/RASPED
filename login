@@ -122,7 +122,6 @@ table, td {
 </style>
 </head>
 <body>
-
 <MARQUEE BEHAVIOR=alternate>
 
 <FONT FACE=arial COLOR=black SIZE=8>
