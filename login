@@ -122,6 +122,12 @@ table, td {
 </style>
 </head>
 <body>
+
+<MARQUEE BEHAVIOR=alternate>
+
+<FONT FACE=arial COLOR=black SIZE=8>
+Esta pagina solo es para usuarios registrados
+</MARQUEE> 
   <div class="complete">
   <img src="https://image.ibb.co/m80VqQ/user_darks.png" alt="Mountain View" style="float:left;width:250px;height:60%;">
 
