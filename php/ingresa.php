@@ -1,6 +1,6 @@
 	<?php
 	require_once('conexion.php')
-	$conexion=mysql_connect ($servidor,$usuario,$contraseña,$bd_name);
+	$conexion=mysql_connect ($servidor,$usuario,$contrasena,$bd_name);
 	$tel = $_REQUEST['tel'];
 	$password = $REQUEST['password'];
 
