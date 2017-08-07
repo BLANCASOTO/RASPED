@@ -3,6 +3,8 @@
 	$conexion=mysql_connect ($servidor,$usuario,$)contraseña,$bd_name);
 	$tel = $_REQUEST['tel'];
 	$password = $REQUEST['password'];
+
+	$password = md5($password);
 	$query = 
 	"select P.id_personal, contac(t.fk_lada,T.telefono) as telefono, P.contrasena 
 	from personal P, telefonos T
@@ -16,13 +18,11 @@
 	$arreglo = array();
 	while (row=myqsl_fetch_array($resul_query))
 		{
-			registro = true
+			$registro = true;
 			header("locatiion:/menu.php"); 
 }
 $close = mysql _close($conexion)
 ?> 
-
-	
 
 
 
