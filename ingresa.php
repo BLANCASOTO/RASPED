@@ -17,7 +17,7 @@
 	while (row=myqsl_fetch_array($resul_query))
 		{
 			$registro = true;
-			header("locatiion:/menu.php"); 
+			header("location:/menu.php"); 
 }
 $close = mysql _close($conexion)
 ?> 
