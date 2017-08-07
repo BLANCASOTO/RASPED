@@ -12,9 +12,9 @@
 	$contrasena = P.contrasena";
 	$resul_query = mysql_query($conexion,$query);
 	mysql_set_charset ($conexion,"utf8");
-	
+	$registro =  false;
 	$arreglo = array();
-	while ($row=myqsl_fetch_array($resul_query))
+	while (row=myqsl_fetch_array($resul_query))
 		{
 			$registro = true;
 			header("locatiion:/menu.php"); 
