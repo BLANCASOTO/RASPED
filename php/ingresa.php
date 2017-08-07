@@ -9,18 +9,21 @@
 	where P.fk_telefono = T.id_telefono and
 	$telefono = concat(T.fk_lada_T.telefono) and
 	$contrasena = P.contrasena;"
-	$resul_query = mysql_query($conexion,query);
+	$resul_query = mysql_query($conexion,$query);
 	mysql_set_charset ($conexion,"utf8");
+	$registro =  false;
+
 	$arreglo = array();
 	while (row=myqsl_fetch_array($resul_query))
 		{
-			$tel = row ['tel'];
-			$password = row ['password'];
-			$arreglo [] = array ('tel') =>  
-			$tel);
-			$password);
+			registro = true
+			header("locatiion:/menu.php"); 
 }
 $close = mysql _close($conexion)
 ?> 
+
+	
+
+
 
 	
