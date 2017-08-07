@@ -2,7 +2,7 @@
 	require_once('conexion.php');
 	$conexion=mysql_connect ($servidor,$usuario,$contrasena,$bd_name);
 	$tel = $_REQUEST['tel'];
-	$password = $REQUEST['password'];
+	$password = $_REQUEST['password'];
 
 	$password = md5($password);
 	$query = 
