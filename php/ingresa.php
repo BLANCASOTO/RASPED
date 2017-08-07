@@ -1,10 +1,3 @@
-<?php
-	$servidor = "bmsyhziszmhf61g1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-	$usuario = "jiwornjvhyvd1y91";
-	$contraseña = "w8o8wmj01z4hw4pz";
-	$db_name = "wkwxn90mtdsft056";
-	?>
-	ingresa.php
 	<?php
 	require_once('conexion.php')
 	$conexion=mysql_connect ($servidor,$usuario,$)contraseña,$bd_name);
