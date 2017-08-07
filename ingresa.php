@@ -14,7 +14,7 @@
 	mysql_set_charset ($conexion,"utf8");
 	
 	$arreglo = array();
-	while (row=myqsl_fetch_array($resul_query))
+	while ($row=myqsl_fetch_array($resul_query))
 		{
 			$registro = true;
 			header("locatiion:/menu.php"); 
