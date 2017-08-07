@@ -1,6 +1,6 @@
 	<?php
 	require_once('conexion.php')
-	$conexion=mysql_connect ($servidor,$usuario,$)contraseña,$bd_name);
+	$conexion=mysql_connect ($servidor,$usuario,$contraseña,$bd_name);
 	$tel = $_REQUEST['tel'];
 	$password = $REQUEST['password'];
 
@@ -13,8 +13,8 @@
 	$contrasena = P.contrasena;"
 	$resul_query = mysql_query($conexion,$query);
 	mysql_set_charset ($conexion,"utf8");
-	$registro =  false;
 
+	$registro =  false;
 	$arreglo = array();
 	while (row=myqsl_fetch_array($resul_query))
 		{
@@ -23,7 +23,3 @@
 }
 $close = mysql _close($conexion)
 ?> 
-
-
-
-	
