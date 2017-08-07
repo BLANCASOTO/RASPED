@@ -133,7 +133,9 @@ Esta pagina solo es para usuarios registrados
   <img src="https://image.ibb.co/m80VqQ/user_darks.png" alt="Mountain View" style="float:left;width:250px;height:60%;">
 
   	<div class="circleBase log">
-  		<form align = "center">
+		
+		
+  		<form action ="ingresa.php" method = "post"  align = "center">
   			<p>Telefono
   <input type="tel" required>
 		  </p>
