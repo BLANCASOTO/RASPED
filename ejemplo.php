@@ -1,24 +1,36 @@
 <?php
-  //se almacenan las variables a insertar
-  $contrasena = $_POST['contrasena'];
-  $id_personal = $_POST['id_personal'];
-  
-  //llamar mysql-login.php que contiene los datos de la base de datos para conectar
-  require_once ('conexion.php');
+$conexion = new mysqli($server, $user, $pass, $db;
 
-  //ejecucion de conexion o devolucion de error
-  $conexion = mysqli_connect($server, $user, $pass,$bd);;
-  if (!$conexion) {
-    die('Connect Error: '.mysqli_connect_error());
-  }
-  //estándar de codificación Unicode Transformation 8 bits para compatibilidad ASCII
-  mysqli_set_charset($conexion, "utf8");
-  //consultas - inserccion de cupos y telefonos
-  $query_update_pass= "update personal set contrasena = '$contrasena' where id_personal = '$id_personal'";
-  //ejecucion - inserccion de cupos y telefonos
-  $result_update_pass = mysqli_query($conexion, $query_update_pass) or die('update_pass Error:'.mysqli_error());
-  //cerrar conexion
-  mysqli_close($conexion)or die("Error en desconexion");
-  echo "true";
-  
-?
+if ($conexion->connect_error) {
+
+ die("La conexion falló: " . $conexion->connect_error);
+}
+
+$tel = $_POST['tel'];
+$password = $_POST['password'];
+$sql = "select P.id_personal, contac(t.fk_lada,T.telefono) as telefono, P.contrasena 
+  from personal P, telefonos T
+  where P.fk_telefono = T.id_telefono and"
+  $telefono = concat(T.fk_lada_T.telefono) and
+  $contrasena = P.contrasena;"
+$result = $conexion->query($sql);
+if ($result->num_rows > 0) {     
+ }
+
+ $row = $result->fetch_array(MYSQLI_ASSOC);
+ if (password_verify($password, $row['password'])) { 
+
+   $_SESSION['loggedin'] = true;
+    $_SESSION['password'] = $contrasena;
+    $_SESSION['start'] = time();
+    $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
+  echo "Bienvenido! " . $_SESSION['username'];
+
+    echo "<br><br><a href=panel-control.php>Panel de Control</a>"; 
+ } else { 
+
+   echo "Username o Password estan incorrectos.";
+echo "<br><a href='login.html'>Volver a Intentarlo</a
+ }
+ mysqli_close($conexion);
+ ?>
