@@ -13,7 +13,7 @@ $sql2=mysql_query("select * from personal where contrasena = $password");
 if ($f2=mysql_fetch_array($sql2)){
 	if($password==$f2['password']){
 	echo '<script>alert("Bienvenido administrador")</script>';
-	echo "<script>"location.href= 'menu.php</scrip'
+	echo "<script>"location.href= '/menu.php</scrip'>
 	}
 
 
