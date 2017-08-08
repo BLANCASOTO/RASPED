@@ -3,7 +3,7 @@ $conexion = new mysqli($server, $user, $pass, $db;
 
 if ($conexion->connect_error) {
 
- die("La conexion falló: " . $conexion->connect_error);
+ die("La conexion no fue exitosa: " . $conexion->connect_error);
 }
 
 $tel = $_POST['tel'];
