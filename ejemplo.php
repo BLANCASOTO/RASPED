@@ -1,7 +1,7 @@
 <?php
 
 //carga y se conecta a la base de datos
-require("config.inc.php");
+require("conexion.php");
 
 if (!empty($_POST)) {
     //obteneos los usuarios respecto a la usuario que llega por parametro
@@ -68,7 +68,7 @@ where P.fk_telefono = T.id_telefono";
       <br /><br /> 
       <input type="submit" value="Login" /> 
   </form> 
-  <a href="register.php">Register</a>
+  <a href="menu.php">Register</a>
  <?php
 }
 
