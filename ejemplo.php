@@ -8,7 +8,7 @@ if ($conexion->connect_error) {
 
 $tel = $_POST['tel'];
 $password = $_POST['password'];
-$sql = "select P.id_personal, contac(t.fk_lada,T.telefono) as telefono, P.contrasena 
+$sql = "select contac(t.fk_lada,T.telefono) as telefono, P.contrasena 
   from personal P, telefonos T
   where P.fk_telefono = T.id_telefono and"
   $telefono = concat(T.fk_lada_T.telefono) and
