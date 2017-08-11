@@ -34,8 +34,8 @@ $telefono=$row['telefono'];
 $contrasena=$row['contrasena'];
 
 	<a href="/menu.php">panel de control</a></div></td>
-	echo "<br><br><a href=/menu.php>Panel de Control</a>"; 
-/*href = ("/menu.php"); */
+	
+
 
 	
 //poblacion del arreglo
