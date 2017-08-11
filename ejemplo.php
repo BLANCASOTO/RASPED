@@ -26,7 +26,7 @@ where P.fk_telefono = T.id_telefono
          session_register("telefono");
          $SESION['menu.php'] = $telefono;
          
-         header("location: ingresar.php");
+         header("location: login.php");
       }else {
          $error = "Your Login Name or Password is invalid";
       }
