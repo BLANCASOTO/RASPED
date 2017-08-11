@@ -8,7 +8,7 @@ $conexion = mysqli_connect($server,$user,$pass,$bd) or die("error conexion");
 $telefono = $_REQUEST['tel'];
 $contrasena = $_REQUEST['contrasena'];
 
-echo = asdfg
+
 //generamos la consulta
 $query = "select concat(T.fk_lada,T.telefono) as telefono, P.contrasena
 from personal P, telefonos T
@@ -19,13 +19,17 @@ mysqli_set_charset($conexion,"utf8");
 
 //ejecutar la consulta
 if(!$result = mysqli_query($conexion, $quey)) die();
+echo = "kdckd";
 
+
+/*
 //creacion del array contenedor de registros
 $arraydatos = array();
 
 //ciclo while para extraer los datos y almacenarlos en el arreglo
 while($row = mysqli_fetch_array($result)){
 
+  */
 //concentracion de registros por columna 
 $telefono=$row['telefono'];
 $contrasena=$row['contrasena']
