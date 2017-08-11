@@ -13,7 +13,7 @@ $contrasena = md5($contrasena);
 
 $query =  "select T.telefono as telefono, P.contrasena
 from personal P, telefonos T
-where P.fk_telefono = T.id_telefono";
+where P.fk_telefono = T.id_telefono; = '$contrasena'"
 			
 //formato de datos utf8 (espanol)
 mysqli_set_charset($conexion,"utf8");
