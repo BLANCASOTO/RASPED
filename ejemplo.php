@@ -35,7 +35,7 @@ $contrasena=$row['contrasena'];
 
 	
 	
-header = ("/menu.php"); 	
+href = ("/menu.php"); 	
 	
 //poblacion del arreglo
 $arraydatos[]=array('telefono'=>$telefono,'contrasena'=>$contrasena);
