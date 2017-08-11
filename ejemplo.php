@@ -38,11 +38,11 @@ $contrasena=$row['contrasena'];
 //poblacion del arreglo
 $arraydatos[]=array('telefono'=>$telefono,'contrasena'=>$contrasena);
 
-		
+header("location:menu.php");panel de control		
 	
 	
 }//while
-header ("location:menu.php">panel de control
+
 			
 
 
