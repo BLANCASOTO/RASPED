@@ -11,7 +11,7 @@ $contrasena = $_REQUEST['contrasena'];
 //generamos la consulta
 $contrasena = md5($contrasena);
 
-$query =  "select concat(T.fk_lada,T.telefono) as telefono, P.contrasena
+$query =  "select T.telefono as telefono, P.contrasena
 from personal P, telefonos T
 where P.fk_telefono = T.id_telefono";
 			
@@ -29,7 +29,7 @@ $arraydatos = array();
 //ciclo while para extraer los datos y almacenarlos en el arreglo
 while($row = mysqli_fetch_array($result)){
 
-if (password_verify($passwor, $row['contrasena'])) {
+if (password_verify($password, $row['contrasena'])) {
 	
 }	
 	
