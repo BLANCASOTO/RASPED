@@ -19,10 +19,10 @@ where P.fk_telefono = T.id_telefono";
 	
 //formato de datos utf8 (espanol)
 mysqli_set_charset($conexion,"utf8");
-/*
+
 //ejecutar la consulta
 if(!$result = mysqli_query($conexion, $query)) die();
-
+/*
 //creacion del array contenedor de registros
 $arraydatos = array();
 
