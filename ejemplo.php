@@ -14,14 +14,14 @@ $contrasena = md5($contrasena);
 $query =  "select concat(T.fk_lada,T.telefono) as telefono, P.contrasena
 from personal P, telefonos T
 where P.fk_telefono = T.id_telefono";
-	
-	
-	
+			
 //formato de datos utf8 (espanol)
 mysqli_set_charset($conexion,"utf8");
 
 //ejecutar la consulta
 if(!$result = mysqli_query($conexion, $query)) die();
+
+
 
 //creacion del array contenedor de registros
 $arraydatos = array();
@@ -29,22 +29,41 @@ $arraydatos = array();
 //ciclo while para extraer los datos y almacenarlos en el arreglo
 while($row = mysqli_fetch_array($result)){
 
+if (password_verify($passwor, $row['contrasena'])) {
+	
+	
+  
+    $_SESSION['loggedin'] = true;
+
+    $_SESSION['username'] = $username;
+
+    $_SESSION['start'] = time();
+
+    $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
+
+ 
+
+    echo "Bienvenido! " . $_SESSION['username'];
+
+    echo "<br><br><a href=menu.php>Panel de Control</a>";
+	
+	
+	
+}	
+	
+	
+	
+	
 //concentracion de registros por columna 
  
 $telefono=$row['telefono'];
 $contrasena=$row['contrasena'];
-
-	
 	
 //poblacion del arreglo
 $arraydatos[]=array('telefono'=>$telefono,'contrasena'=>$contrasena);
-	
-
-	
-	
+		
 }//while
 
- 
 //cierre de conexion
 $close = mysqli_close($conexion) or die("error en desconexion");
 
