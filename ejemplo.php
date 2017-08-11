@@ -22,7 +22,7 @@ mysqli_set_charset($conexion,"utf8");
 
 //ejecutar la consulta
 if(!$result = mysqli_query($conexion, $query)) die();
-/*
+
 //creacion del array contenedor de registros
 $arraydatos = array();
 
@@ -43,7 +43,7 @@ $arraydatos[]=array('telefono'=>$telefono,'contrasena'=>$contrasena);
 	
 	
 }//while
-
+/*
  
 //cierre de conexion
 $close = mysqli_close($conexion) or die("error en desconexion");
