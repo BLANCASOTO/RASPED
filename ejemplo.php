@@ -24,7 +24,7 @@ where P.fk_telefono = T.id_telefono
 		
       if($count == 1) {
          session_register("telefono");
-         $_SESSION['login.php'] = $telefono;
+         $SESION['menu.php'] = $telefono;
          
          header("location: ingresar.php");
       }else {
