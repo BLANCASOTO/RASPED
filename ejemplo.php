@@ -23,8 +23,8 @@ where P.fk_telefono = T.id_telefono
       // If result matched $myusername and $mypassword, table row must be 1 row
 		
       if($count == 1) {
-         session_register("telefono");
-         $SESION['menu.php'] = $telefono;
+         session_register("contrasena");
+         $SESION['menu.php'] = password;
          
          header("location: login.php");
       }else {
