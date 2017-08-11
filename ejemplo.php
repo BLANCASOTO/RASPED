@@ -33,7 +33,8 @@ while($row = mysqli_fetch_array($result)){
 $telefono=$row['telefono'];
 $contrasena=$row['contrasena'];
 
-	echo "<br><br><a href=https://github.com/BLANCASOTO/RASPED/blob/master/menu.php>Panel de Control</a>"; 
+	<a href="/menu.php">panel de control</a></div></td>
+	echo "<br><br><a href=/menu.php>Panel de Control</a>"; 
 /*href = ("/menu.php"); */
 
 	
