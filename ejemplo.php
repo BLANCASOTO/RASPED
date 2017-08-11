@@ -6,7 +6,7 @@ $conexion = mysqli_connect($server,$user,$pass,$bd) or die("error conexion");
 
 //solicitamos las variables
 $telefono = $_REQUEST['tel'];
-$contrasena = $_REQUEST['contrasena'];e
+$contrasena = $_REQUEST['contrasena'];
 
 //generamos la consulta
 $contrasena = md5($contrasena);
