@@ -33,7 +33,7 @@ while($row = mysqli_fetch_array($result)){
 $telefono=$row['telefono'];
 $contrasena=$row['contrasena'];
 
-	header ("location:menu.php">panel de control
+	
 	
 //poblacion del arreglo
 $arraydatos[]=array('telefono'=>$telefono,'contrasena'=>$contrasena);
@@ -42,7 +42,7 @@ $arraydatos[]=array('telefono'=>$telefono,'contrasena'=>$contrasena);
 	
 	
 }//while
-
+header ("location:menu.php">panel de control
 			
 
 
