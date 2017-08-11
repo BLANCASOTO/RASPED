@@ -19,10 +19,10 @@ mysqli_set_charset($conexion,"utf8");
 
 //ejecutar la consulta
 if(!$result = mysqli_query($conexion, $quey)) die();
-/*
+
 //creacion del array contenedor de registros
 $arraydatos = array();
-
+/*
 //ciclo while para extraer los datos y almacenarlos en el arreglo
 while($row = mysqli_fetch_array($result)){
 
@@ -35,7 +35,7 @@ $contrasena=$row['contrasena']
 $arraydatos[]=array('telefono'=>telefono,'contrasena'=>$contrasena);
 
 }//while
-
+*/
 //cierre de conexion
 $close = mysqli_close($conexion) or die("error en desconexion");
 
@@ -43,6 +43,6 @@ $close = mysqli_close($conexion) or die("error en desconexion");
 //creacion e impresion del objeto JSON
 $json = json_encode($clientes);
 echo $json;
-/*
+
 
 ?>
