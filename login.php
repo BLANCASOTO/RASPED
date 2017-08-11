@@ -135,7 +135,7 @@ Esta pagina solo es para usuarios registrados
   	<div class="circleBase log">
 		
 		
-  		<form action ="ejemplo.php" method= "post"  align = "center">
+  		<form action ="ingresa.php" method= "post"  align = "center">
   			<p>Telefono
   <input id = "tel" name = "tel" type="tel" required>
 		  </p>
