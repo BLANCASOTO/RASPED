@@ -1,41 +1,45 @@
 <?php
-
-require_once ('conexion.php')
-
-$conexion = new mysqli($server, $user, $pass, $db);
-
-if ($conexion->connect_error) {
- die("La conexion falló: " . $conexion->connect_error);
-}
-
-$telefono = $_POST['tel'];
-$password = $_POST['password'];
- 
-$sql = "SELECT * FROM concat(T.fk_lada,T.telefono) as telefono, P.contrasena
+   include("conexion.php");
+   session_start();
+   
+   if($_SERVER["REQUEST_METHOD"] == "POST") {
+      // username and password sent from form 
+      
+      $telefono = mysqli_real_escape_string($db,$_POST['telefono']);
+      $password = mysqli_real_escape_string($db,$_POST['password']); 
+      
+      $sql = "SELECT concat(T.fk_lada,T.telefono) as telefono, P.contrasena
 from personal P, telefonos T
-where P.fk_telefono = T.id_telefono"
+where P.fk_telefono = T.id_telefono
+";
 
-$result = $conexion->query($sql);
+      
+      $result = mysqli_query($db,$sql);
+      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+      $active = $row['active'];
+      
+      $count = mysqli_num_rows($result);
+      
+      // If result matched $myusername and $mypassword, table row must be 1 row
+		
+      if($count == 1) {
+         session_register("telefono");
+         $_SESSION['login.php'] = $telefono;
+         
+         header("location: ingresar.php");
+      }else {
+         $error = "Your Login Name or Password is invalid";
+      }
+   }
+?>
 
-echo $sql."<br>";
 
-if ($result->num_rows > 0) {     
- }
- $row = $result->fetch_array(MYSQLI_ASSOC);
- if ($password == $row['password']) { 
- 
-    $_SESSION['loggedin'] = true;
-    $_SESSION['tel'] = $telefono;
-    $_SESSION['start'] = time();
-    $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
 
-    echo "Bienvenido! " . $_SESSION['telefono'];
-    echo "<br><br><a href=menu.php>Panel de Control</a>"; 
 
- } else { 
-   echo "Username o Password estan incorrectos.";
 
-   echo "<br><a href='login.html'>Volver a Intentarlo</a>";
- }
- mysqli_close($conexion); 
+
+
+
+
  ?>
+\\
