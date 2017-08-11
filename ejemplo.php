@@ -5,7 +5,7 @@
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form 
       
-      $telefono = mysqli_real_escape_string($db,$_POST['telefono']);
+      $telefono = mysqli_real_escape_string($db,$_POST['tel']);
       $password = mysqli_real_escape_string($db,$_POST['password']); 
       
       $sql = "SELECT concat(T.fk_lada,T.telefono) as telefono, P.contrasena
