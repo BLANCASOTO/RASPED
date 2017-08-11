@@ -31,6 +31,8 @@ while($row = mysqli_fetch_array($result)){
 $telefono=$row['telefono'];
 $contrasena=$row['contrasena']
 
+  
+  echo = $telefono;
 //poblacion del arreglo
 $arraydatos[]=array('telefono'=>$telefono,'contrasena'=>$contrasena);
 
@@ -39,7 +41,7 @@ $arraydatos[]=array('telefono'=>$telefono,'contrasena'=>$contrasena);
 //cierre de conexion
 $close = mysqli_close($conexion) or die("error en desconexion");
 
-echo = $telefono;
+
 
 
 //creacion e impresion del objeto JSON
