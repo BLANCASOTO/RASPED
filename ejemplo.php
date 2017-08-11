@@ -10,6 +10,8 @@ $contrasena = $_REQUEST['contrasena'];
 
 
 //generamos la consulta
+$contrasena = md5($contrasena);
+
 $query = "select concat(T.fk_lada,T.telefono) as telefono, P.contrasena
 from personal P, telefonos T
 where P.fk_telefono = T.id_telefono";
@@ -32,9 +34,8 @@ while($row = mysqli_fetch_array($result)){
 $telefono=$row['telefono'];
 $contrasena=$row['contrasena']
  
- echo = $telfono;
-echo = $contrasena;
-  /*
+
+
   
   
   
@@ -43,12 +44,14 @@ $arraydatos[]=array('telefono'=>$telefono,'contrasena'=>$contrasena);
 
 }//while
 
+ echo = $telfono;
+echo = $contrasena;
 //cierre de conexion
 $close = mysqli_close($conexion) or die("error en desconexion");
 
 //creacion e impresion del objeto JSON
 $json = json_encode($arraydatos);
 echo $json;
-/*
+
 
 ?>
