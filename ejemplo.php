@@ -29,9 +29,7 @@ $arraydatos = array();
 //ciclo while para extraer los datos y almacenarlos en el arreglo
 while($row = mysqli_fetch_array($result)){
 
-if (password_verify($password, $row['contrasena'])) {
 	
-}	
 	
 //concentracion de registros por columna 
  
