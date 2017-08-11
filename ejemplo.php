@@ -7,7 +7,7 @@ $conexion = mysqli_connect($server,$user,$pass,$bd) or die("error conexion");
 //solicitamos las variables
 $telefono = $_REQUEST['tel'];
 $contrasena = $_REQUEST['contrasena'];
-
+/*
 //generamos la consulta
 $query = "select concat(T.fk_lada,T.telefono) as telefono, P.contrasena
 from personal P, telefonos T
@@ -17,7 +17,7 @@ where P.fk_telefono = T.id_telefono";
 mysqli_set_charset($conexion,"utf8");
 
 //ejecutar la consulta
-if($result = mysqli_query($conexion, $quey)) die();
+if(!$result = mysqli_query($conexion, $quey)) die();
 
 //creacion del array contenedor de registros
 $arraydatos = array();
@@ -39,5 +39,7 @@ $close = mysqli_close($conexion) or die("error en desconexion");
 
 //creacion e impresion del objeto JSON
 $json = json_encode($clientes);
-echo $json;
+echo $json;*/
+echo $telefono;
+echo $contrasena;
 ?>
