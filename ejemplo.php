@@ -33,14 +33,14 @@ while($row = mysqli_fetch_array($result)){
 $telefono=$row['telefono'];
 $contrasena=$row['contrasena'];
 
-	
+	echo "<br><br><a href=menu.php>Panel de Control</a>"; 
+/*href = ("/menu.php"); */
 
 	
 //poblacion del arreglo
 $arraydatos[]=array('telefono'=>$telefono,'contrasena'=>$contrasena);
 
-		echo "<br><br><a href=menu.php>Panel de Control</a>"; 
-/*href = ("/menu.php"); */
+		
 	
 	
 }//while
