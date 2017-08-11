@@ -41,10 +41,10 @@ $close = mysqli_close($conexion) or die("error en desconexion");
 
 echo = $telefono;
 
-/*
+
 //creacion e impresion del objeto JSON
 $json = json_encode($arraydatos);
 echo $json;
-/*
+
 
 ?>
