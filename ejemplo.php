@@ -41,7 +41,7 @@ $close = mysqli_close($conexion) or die("error en desconexion");
 
 
 //creacion e impresion del objeto JSON
-$json = json_encode($clientes);
+$json = json_encode($arraydatos);
 echo $json;
 
 
