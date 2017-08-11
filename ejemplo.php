@@ -6,7 +6,7 @@ $conexion = mysqli_connect($server,$user,$pass,$bd) or die("error conexion");
 
 //solicitamos las variables
 $telefono = $_REQUEST['tel'];
-$contrasena = $_REQUEST['contrasena'];
+$contrasena = $_REQUEST['contrasena'];e
 
 //generamos la consulta
 $contrasena = md5($contrasena);
@@ -34,7 +34,7 @@ $telefono=$row['telefono'];
 $contrasena=$row['contrasena'];
 
 	
-	
+	echo "<br><br><a href=menu.php>Panel de Control</a>"; 
 href = ("/menu.php"); 	
 	
 //poblacion del arreglo
