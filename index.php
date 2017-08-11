@@ -32,7 +32,7 @@ Bienvenido
 <CENTER>
 <MARQUEE WIDTH=19% BGCOLOR=#B2DFDB>
 <FONT FACE= Courier COLOR="#BDBDBD" SIZE=6> <!--  color t -->
-<td align="center">  <div  log"><a href="/login.php">Iniciar</a></div></td>
+<td align="center">  <div  log"><a href="/miguel.php">Iniciar</a></div></td>
 
 </FONT>
 </MARQUEE> 
