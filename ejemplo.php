@@ -24,7 +24,7 @@ if(!$result = mysqli_query($conexion, $quey)) die();
 
 //creacion del array contenedor de registros
 $arraydatos = array();
-
+/*
 //ciclo while para extraer los datos y almacenarlos en el arreglo
 while($row = mysqli_fetch_array($result)){
 
