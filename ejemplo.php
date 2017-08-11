@@ -33,9 +33,6 @@ if (password_verify($passwor, $row['contrasena'])) {
 	
 }	
 	
-	
-	
-	
 //concentracion de registros por columna 
  
 $telefono=$row['telefono'];
