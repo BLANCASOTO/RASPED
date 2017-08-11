@@ -19,7 +19,7 @@ where P.fk_telefono = T.id_telefono";
 	
 //formato de datos utf8 (espanol)
 mysqli_set_charset($conexion,"utf8");
-
+/*
 //ejecutar la consulta
 if(!$result = mysqli_query($conexion, $query)) die();
 
@@ -51,5 +51,5 @@ $close = mysqli_close($conexion) or die("error en desconexion");
 //creacion e impresion del objeto JSON
 $json = json_encode($arraydatos);
 echo $json;
-
+/*
 ?>
