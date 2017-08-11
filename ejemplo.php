@@ -1,45 +1,44 @@
 <?php
-   include("conexion.php");
-   session_start();
-   
-   if($_SERVER["REQUEST_METHOD"] == "POST") {
-      // username and password sent from form 
-      
-      $telefono = mysqli_real_escape_string($db,$_POST['tel']);
-      $password = mysqli_real_escape_string($db,$_POST['password']); 
-      
-      $sql = "SELECT concat(T.fk_lada,T.telefono) as telefono, P.contrasena
+require_once('conexion.php');
+
+//creamos la conexion
+$conexion = mysqli_connect($server,$user,$pass,$bd) or die("error conexion);
+
+//solicitamos las variables
+$telefono = $_REQUEST['tel'];
+$contrasena = $_REQUEST['contrasena'];
+
+//generamos la consulta
+$query = "select concat(T.fk_lada,T.telefono) as telefono, P.contrasena
 from personal P, telefonos T
-where P.fk_telefono = T.id_telefono
-";
+where P.fk_telefono = T.id_telefono";
 
-      
-      $result = mysqli_query($db,$sql);
-      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-      $active = $row['active'];
-      
-      $count = mysqli_num_rows($result);
-      
-      // If result matched $myusername and $mypassword, table row must be 1 row
-		
-      if($count == 1) {
-         session_register("contrasena");
-         $SESION['menu.php'] = password;
-         
-         header("location: login.php");
-      }else {
-         $error = "Your Login Name or Password is invalid";
-      }
-   }
+//formato de datos utf8 (espanol)
+mysqli_set_charset($conexion,"utf8");
+
+//ejecutar la consulta
+if(!$result = mysqli_query($conexion, $quey)) die();
+
+//creacion del array contenedor de registros
+$arraydatos = array();
+
+//ciclo while para extraer los datos y almacenarlos en el arreglo
+while($row = mysqli_fetch_array($result)){
+
+//concentracion de registros por columna 
+$telefono=$row['telefono'];
+$contrasena=$row['contrasena']
+
+//poblacion del arreglo
+$arraydatos[]=array('telefono'=>telefono,'contrasena'=>$contrasena);
+
+}//while
+
+//cierre de conexion
+$close = mysqli_close($conexion) or die("error en desconexion");
+
+//creacion e impresion del objeto JSON
+$json = json_encode($clientes);
+echo $json;
+
 ?>
-
-
-
-
-
-
-
-
-
- ?>
-\\
