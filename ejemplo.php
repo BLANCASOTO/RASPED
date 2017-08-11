@@ -31,7 +31,7 @@ while($row = mysqli_fetch_array($result)){
 //concentracion de registros por columna 
  
 $telefono=$row['telefono'];
-$contrasena=$row['contrasena']
+$contrasena=$row['contrasena'];
 
 //poblacion del arreglo
 $arraydatos[]=array('telefono'=>$telefono,'contrasena'=>$contrasena);
