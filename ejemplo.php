@@ -3,11 +3,12 @@ require_once('conexion.php');
 
 //creamos la conexion
 $conexion = mysqli_connect($server,$user,$pass,$bd) or die("error conexion");
-
+/*
 //solicitamos las variables
 $telefono = $_REQUEST['tel'];
 $contrasena = $_REQUEST['contrasena'];
-
+*/
+echo = asdfg
 //generamos la consulta
 $query = "select concat(T.fk_lada,T.telefono) as telefono, P.contrasena
 from personal P, telefonos T
