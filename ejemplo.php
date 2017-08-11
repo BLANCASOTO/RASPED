@@ -43,12 +43,12 @@ $arraydatos[]=array('telefono'=>$telefono,'contrasena'=>$contrasena);
 	
 }//while
 
- /*
+ 
 //cierre de conexion
 $close = mysqli_close($conexion) or die("error en desconexion");
 
 //creacion e impresion del objeto JSON
 $json = json_encode($arraydatos);
 echo $json;
-/*
+
 ?>
