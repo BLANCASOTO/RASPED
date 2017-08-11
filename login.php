@@ -137,10 +137,10 @@ Esta pagina solo es para usuarios registrados
 		
   		<form action ="ejemplo.php" method= "post"  align = "center">
   			<p>Telefono
-  <input type="tel" required>
+  <input id = "tel" name = "tel" type="tel" required>
 		  </p>
 		  <p>Contraseña
-  <input type="password" required>
+  <input id = "contrasena" name = "contrasena" type="password" required>
 		  </p>
 		  <p>&nbsp;</p>
 		  <button class="button"><span>Ingresar </span></button>
