@@ -8,7 +8,7 @@
 <head>
 <style>
 body {
-    background-color: 	#00bc98;	
+    background-color: 	#80DEEA;	
 <div class="rasped2">TEXT
   </br> 
   text
