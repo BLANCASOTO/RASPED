@@ -13,9 +13,7 @@ $contrasena = md5($contrasena);
 
 $query =  "select P.id_personal, concat(T.fk_lada,T.telefono) as telefono, P.contrasena
 from personal P, telefonos T
-where P.fk_telefono = T.id_telefono and
-telefono = concat(T.fk_lada,T.telefono) and
-contrasena = P.contrasena;"
+where P.fk_telefono = T.id_telefono;"
 
 	
 	//*select P.id_personal, concat(T.fk_lada,T.telefono) as telefono, P.contrasena
