@@ -32,8 +32,8 @@ body {
 <table style="width:100%">
       <tr>
           
-      <a href="/login.php">Iniciar</a></div></td>    
-   <td align="center"><div  log"><a href="agregar.html"><img src="https://image.ibb.co/b3gMGa/agregar.png"Editar</a></div></td>
+         
+   <td align="center"><div  log"><a href="agregar.php"><img src="https://image.ibb.co/b3gMGa/agregar.png"Editar</a></div></td>
   <td align="center"><div  log"><a href="file:///C:/Users/BlancaSoto/Desktop/RASPED/editar.html"><img src="https://image.ibb.co/cFyPma/editar.png"reportes</a></div></td>
   <td align="center"><div  log"><a href="file:///C:/Users/BlancaSoto/Desktop/RASPED/eliminarusuarios.html"><img src="https://image.ibb.co/ihEYCF/borrar.png"borrar</a></div></td>
 <td align="center"><div  log"><a href="file:///C:/Users/BlancaSoto/Desktop/RASPED/reportegeneral.html"><img src="https://image.ibb.co/j6bJUv/buscar.png"Editar</a></div></td>
