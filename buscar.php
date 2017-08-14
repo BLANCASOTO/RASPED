@@ -5,31 +5,31 @@
 <style>
 body {
     background-color:#DCE775;
-		
-<div
-table>
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-  </tr>
-  <tr>
-    <td>Peter</td>
-    <td>Griffin</td>
-  </tr>
-  <tr>
-    <td>Lois</td>
-    <td>Griffin</td>
-  </tr>
-</table>
+	}	
 
-</body>
-</html>
 
 
 </style>
 </head>
 <body>
-
+<form class="navbar-form navbar-right" role="search">
+</form>
+      </div> 
+    </nav>
+    <div class="container">
+      <div class="well well-lg">
+        <form role="form">
+          <div class="form-group">
+            <label>Nombre</label>
+            <span class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Buscar">
+            </span>
+<p class="help-block">&nbsp;</p>
+          </div>
+        <div class="form-group"></div>
+        <div class="form-group"></div>
+          <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+        </form>
 <p style="text-align: float:left; "> <img src="https://image.ibb.co/cWLnNF/portafolio_de_busqueda.png" alt="imagen 3" width="25%">
 
 <MARQUEE BEHAVIOR=alternate>
