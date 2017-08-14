@@ -133,12 +133,16 @@ Esta pagina solo es para usuarios registrados
   <img src="https://image.ibb.co/m80VqQ/user_darks.png" alt="Mountain View" style="float:left;width:250px;height:60%;">
 
   	<div class="circleBase log">
+			
 		
-		
-  		<form action ="ejemplo.php" method= "post"  align = "center">
-  			<p>Nombre
-  <input id = "nombre_personal" name = "nombre_personal" type="nombre" required>
+  <form action ="ejemplo.php" method= "post"  align = "center">
+  
+<p>Telefono
+ 
+ <input id = "tel" name = "tel" type="tel" required>
+
 		  </p>
+	
 		  <p>Contraseña
   <input id = "contrasena" name = "contrasena" type="password" required>
 		  </p>
