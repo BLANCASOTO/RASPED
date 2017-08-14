@@ -11,12 +11,14 @@ $contrasena = $_REQUEST['contrasena'];
 //generamos la consulta
 $contrasena = md5($contrasena);
 
-$query =  "select concat(T.fk_lada,T.telefono) as telefono, P.contrasena
+$query =  "select P.id_personal, concat(T.fk_lada,T.telefono) as telefono, P.contrasena
 from personal P, telefonos T
-where P.fk_telefono = T.id_telefono";
+where P.fk_telefono = T.id_telefono and
+telefono = concat(T.fk_lada,T.telefono) and
+contrasena = P.contrasena;"
 
 	
-	//"select P.id_personal, concat(T.fk_lada,T.telefono) as telefono, P.contrasena
+	//*select P.id_personal, concat(T.fk_lada,T.telefono) as telefono, P.contrasena
 //from personal P, telefonos T
 //where P.fk_telefono = T.id_telefono"
 //;
