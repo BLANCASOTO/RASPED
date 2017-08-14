@@ -39,7 +39,7 @@ $contrasena=$row['contrasena'];
 	
 //poblacion del arreglo
 $arraydatos[]=array('telefono'=>$telefono,'contrasena'=>$contrasena);
-heade('Location:menu.php');		
+header('Location:menu.php');		
 }//while
 
 //cierre de conexion
