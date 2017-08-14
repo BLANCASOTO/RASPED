@@ -38,7 +38,7 @@ $telefono=$row['tel'];
 $contrasena=$row['contrasena'];
 	
 //poblacion del arreglo
-$arraydatos[]=array('tel'=>$telefono,'contrasena'=>$contrasena);
+$arraydatos[]=array('telefono'=>$telefono,'contrasena'=>$contrasena);
 		
 }//while
 
