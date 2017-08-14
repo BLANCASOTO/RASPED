@@ -11,7 +11,7 @@ $contrasena = $_REQUEST['contrasena'];
 //generamos la consulta
 $contrasena = md5($contrasena);
 
-$query =  "select P.id_personal, concat(T.fk_lada,T.telefono) as telefono, P.contrasena
+$query =  "select concat(T.fk_lada,T.telefono) as telefono, P.contrasena
 from personal P, telefonos T
 where P.fk_telefono = T.id_telefono";
 
