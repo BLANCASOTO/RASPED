@@ -5,15 +5,16 @@ require_once('conexion.php');
 $conexion = mysqli_connect($server,$user,$pass,$bd) or die("error conexion");
 
 //solicitamos las variables
-$nombre_personal = $_REQUEST['nombre'];
+$telefono = $_REQUEST['tel'];
 $contrasena = $_REQUEST['contrasena'];
 
 //generamos la consulta
 $contrasena = md5($contrasena);
 
-$query =  "select n.nombre_usuario as nombre_usuario, P.contrasena
-from personal P,
-where id_personal = T.id_personal; = '$contrasena'";
+$query =  "select P.id_personal, concat(T.fk_lada,T.telefono) as telefono, P.contrasena
+from personal P, telefonos T
+where P.fk_telefono = T.id_telefono
+;
 			
 //formato de datos utf8 (espanol)
 mysqli_set_charset($conexion,"utf8");
@@ -33,7 +34,7 @@ while($row = mysqli_fetch_array($result)){
 	
 //concentracion de registros por columna 
  
-$nombre_personal=$row['nombre'];
+$telefono=$row['tel'];
 $contrasena=$row['contrasena'];
 	
 //poblacion del arreglo
