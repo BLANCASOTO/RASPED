@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<h1 style="color:#9E9E9E;"> Anadir a un nuevo usuario </h1>
+<h1 style="color:#E0E0E0;"> Anadir a un nuevo usuario </h1>
 <head>
 <style>
 body {
-    background-color:#A7FFEB;
+    background-color:#006064;
 <div
 table>
   <tr>
