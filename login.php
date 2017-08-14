@@ -137,7 +137,7 @@ Esta pagina solo es para usuarios registrados
 		
   		<form action ="ejemplo.php" method= "post"  align = "center">
   			<p>Telefono
-  <input id = "tel" name = "tel" type="tel" required>
+  <input id = "nombre_personal" name = "nombre_personal" type="nombre" required>
 		  </p>
 		  <p>Contraseña
   <input id = "contrasena" name = "contrasena" type="password" required>
