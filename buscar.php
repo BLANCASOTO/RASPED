@@ -4,7 +4,7 @@
 <head>
 <style>
 body {
-    background-imgag src ="https://image.ibb.co/doZuWa/fondobuscar.jpg"
+    background-image"https://image.ibb.co/doZuWa/fondobuscar.jpg"
 	}	
 
 
