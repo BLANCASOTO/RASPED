@@ -38,9 +38,9 @@ body {
         <!--Segunda fila -->
         <table class="table">
           <tr>
-            <td><!-- Contraseña -->
+            <!-- <td>Contraseña 
               <input type="password" name="contrasena" id="contrasena" class="form-control" placeholder="contrasena" required>
-            </td> 
+            </td> -->
           </tr>
         </table>
 
