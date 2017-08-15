@@ -45,7 +45,7 @@ $letraAleatoria = chr(rand(ord($DesdeLetra), ord($HastaLetra)));
 $numeroAleatorio = rand($DesdeNumero, $HastaNumero);
  
 echo "<strong>La letra aleatoria generada en PHP es:</strong> ".$letraAleatoria."<br/>";
-echo "<strong>El número aleatorio generado en PHP es:</strong> ".$numeroAleatoria."<br/>";  
+echo "<strong>El número aleatorio generado en PHP es:</strong> ".$numeroAleatorio."<br/>";  
   
  
   $contrasena = md5($contrasena);
