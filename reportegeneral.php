@@ -18,7 +18,7 @@ table, th, td {
    
 }
 th, td {
-    padding: 5px;
+    padding: 10px;
     text-align: left;
 }
 table#t01 tr:nth-child(even) {
