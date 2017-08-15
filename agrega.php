@@ -29,7 +29,7 @@ $fk_horario = '';
   $query_insert_lada = "insert ignore into ladas(id_lada) values ('$lada')";
   $query_insert_telefono = "insert into telefonos(fk_lada,telefono) values ('$lada','$telefono')";
   //ejecucion - inserccion de cupos y telefonos
-  $result_insert_sede = mysqli_query($conexion, $query_insert_sede) or die('result_insert_sede Error1:'.mysqli_error());
+  $result_insert_sede = mysqli_query($conexion, $query_insert_sede) or die('result_insert_sede Error1:'.mysqli_error1());
   $result_insert_cupo = mysqli_query($conexion, $query_insert_cupo) or die('result_insert_cupo Error2:'.mysqli_error());
   $result_insert_lada = mysqli_query($conexion, $query_insert_lada) or die('result_insert_lada Error3:'.mysqli_error());
   $result_insert_telef = mysqli_query($conexion, $query_insert_telefono) or die('result_insert_telef Error4:'.mysqli_error());
