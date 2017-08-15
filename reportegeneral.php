@@ -17,7 +17,7 @@
 
    $result = $conn->query($sql);
    $rows = $result->fetchAll();
-
+<!--
    <!DOCTYPE html>
    <html lang="en">
     <head>
@@ -46,10 +46,12 @@
         <td><?php echo $row['nombre']; ?></td>
         <td><?php echo $row['hora']; ?></td>
       </tr>
-    <?php } ?>
+    <?php } 
+?>
     </tbody>
   </table>
 </html>
+-->
 
 
 
