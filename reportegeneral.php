@@ -17,6 +17,9 @@ body {
     </MARQUEE> 
 </head>
     
+<body>
+    
+    
     table {
     width:100%;
 }
@@ -129,8 +132,8 @@ table#t01 th {
   </tr>
 </table>
     
+    </body>
     
-</body>
 
 
  
