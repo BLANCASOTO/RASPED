@@ -69,9 +69,12 @@ body {
               <label for="sel1">tipo de usuario</label>
               <select class="form-control" id="sel1">
 
+		      
+		      <input type="Submit" name="enviar" value="Agregar integrante">
+		      
                 <?php
                 //pedir datos de base de datos
-                require_once ('content/mysql-login.php');
+                require_once ('conexion.php');
                 //Creamos la conexión
                 $conexion = mysqli_connect($server, $user, $pass,$bd) 
                 or die("Ha sucedido un error inexperado en la conexion de la base de datos");
@@ -121,8 +124,7 @@ body {
     <table class="table">
       <tr align="center">
         <td>
-		<input type="Submit" name="enviar" value="Agregar integrante">
-//</form>
+		
           <button type="submit" class="btn btn-primary">Insertar</button>
         </td>
       </tr>
