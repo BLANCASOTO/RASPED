@@ -45,6 +45,8 @@ table#t01 th {
 </MARQUEE> 
 <MARQUEE BEHAVIOR=alternate>
     </MARQUEE>
+<p style="text-align: left; "> <img src="https://image.ibb.co/jKFd9k/RASPED_BM_icono_Tarjetas.png " alt="imagen 3" width="25%">
+</MARQUEE>
 
 <table id="t01">
   <tr>
@@ -134,8 +136,6 @@ table#t01 th {
 
 
  
-<p style="text-align: left; "> <img src="https://image.ibb.co/jKFd9k/RASPED_BM_icono_Tarjetas.png " alt="imagen 3" width="25%">
-</MARQUEE>
 
 
  
