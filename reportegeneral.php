@@ -7,8 +7,6 @@ body {
     background-color: 	#00bc97;	
 
 }      
-
-     
     table {
     width:100%;
 }
@@ -19,7 +17,7 @@ table, th, td {
 }
 th, td {
     padding: 10px;
-    text-align: left;
+    text-align: center;
 }
 table#t01 tr:nth-child(even) {
     background-color: #eee;
