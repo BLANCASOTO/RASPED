@@ -47,9 +47,9 @@ body {
       $Hora = $row['Hora'];
       
       echo"<tr>";
-      echo "<tr>.$Dia.</th>";
-      echo"<tr>.$Nombre.</th>";
-      echo "<tr>.$Hora.</th>";
+      echo "<tr>"$Dia</th>";
+      echo"<tr>$Nombre</th>";
+      echo "<tr>$Hora</th>";
       echo"</tr>"
           ?>
          </table>
