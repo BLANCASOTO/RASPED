@@ -17,41 +17,41 @@
 
    $result = $conn->query($sql);
    $rows = $result->fetchAll();
-<!--
-   <!DOCTYPE html>
-   <html lang="en">
-    <head>
 
-   <meta charset="utf-8"/>
-   <title>Query data sending on ID</title>
-</head>   
+//   <!DOCTYPE html>
+  // <html lang="en">
+    //<head>
+
+   //<meta charset="utf-8"/>
+   //<title>Query data sending on ID</title>
+//</head>   
   
- <body>
-      <table border="1">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Nombre</th>
-        <th>Email</th>
-        <th>Telefono</th>
-      </tr>
-    </thead>
-    <tbody>
-    <?php
-      foreach ($rows as $row) {
-    ?>
-      <tr>
-        <td><a href="menu.php?id=<?php echo $row['id_personal']; ?>"><?php echo $row['id_personal']; ?></a></td>
-        <td><?php echo $row['dia']; ?></td>
-        <td><?php echo $row['nombre']; ?></td>
-        <td><?php echo $row['hora']; ?></td>
-      </tr>
+ //<body>
+   //   <table border="1">
+    //<thead>
+      //<tr>
+        //<th>ID</th>
+        //<th>Nombre</th>
+        //<th>Email</th>
+        //<th>Telefono</th>
+      //</tr>
+    //</thead>
+    //<tbody>
+    //<?php
+      //foreach ($rows as $row) {
+    //?>
+      //<tr>
+        //<td><a href="menu.php?id=<?php echo $row['id_personal']; ?>"><?php echo $row['id_personal']; ?></a></td>
+        //<td><?php echo $row['dia']; ?></td>
+        //<td><?php echo $row['nombre']; ?></td>
+        //<td><?php echo $row['hora']; ?></td>
+      //</tr>
     <?php } 
-?>
-    </tbody>
-  </table>
-</html>
--->
+//?>
+   // </tbody>
+  //</table>
+//</html>
+
 
 
 
