@@ -1,34 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-body {
-    background-color: 	#00bc97;	
-}
-</style>
-
-<CENTER>
-<MARQUEE    WIDTH=40% BGCOLOR=#B2DFDB BEHAVIOR=alternate> <FONT FACE=arial COLOR=#9E9E9E SIZE=6> Reporte diario
-</CENTER>
-</MARQUEE> 
-
-</head>
-<body>
-<MARQUEE BEHAVIOR=alternate>
-<p style="text-align: left; "> <img src="https://image.ibb.co/jKFd9k/RASPED_BM_icono_Tarjetas.png " alt="imagen 3" width="25%">
-</MARQUEE>
-       <table>
-  <tr>
-    <th>Dia</th>
-    <th>Nombre</th> 
-    <th>Hora</th>
-  </tr>
-    </body>
-    <?php
+<?php
+   
    require_once ('conexion.php');
-      // conexión
+   $result;
+   
+   // conexión
    $conexion = mysqli_connect($server, $user, $pass,$bd) 
-   or die("Error de conexion  de la base de datos");
+   or die("error en la base de datos");
    
    //consulta
    $sql = "select P.id_personal, concat(C.fk_sede,C.cupo) as cupo, R.id_retardos, P.nombre_personal, P.apellido_m, P.apellido_p,
@@ -37,21 +14,42 @@ body {
    where R.fk_personal = P.id_personal and
    R.fk_fecha = F.id_fecha and
    P.fk_cupo = C.id_cupo;";
-   mysqli_set_charset($conexion, "utf8"); 
-   
- 	$result_query = mysqli_query($conexion, $sql)) die();  
-   while($row = mysqli_fetch_array($result)) { 
-      
-      $Dia = $row['Dia'];
-      $Nombre = $row['Nombre'];
-      $Hora = $row['Hora'];
-      
-      echo"<tr>";
-      echo '<th>'.$Dia.</th>;
-      echo'<th>'.$Nombre.</th>;
-      echo '<th>'.$Hora.</th>;
-      echo"</tr>";
-   }
-          ?>
-         </table>
-   </html>
+
+   $result = $conn->query($sql);
+   $rows = $result->fetchAll();
+
+   <!DOCTYPE html>
+   <html lang="en">
+    <head>
+
+   <meta charset="utf-8"/>
+   <title>Query data sending on ID</title>
+</head>   
+  
+ <body>
+      <table border="1">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Email</th>
+        <th>Telefono</th>
+      </tr>
+    </thead>
+    <tbody>
+    <?php
+      foreach ($rows as $row) {
+    ?>
+      <tr>
+        <td><a href="menu.php?id=<?php echo $row['id_personal']; ?>"><?php echo $row['id_personal']; ?></a></td>
+        <td><?php echo $row['dia']; ?></td>
+        <td><?php echo $row['nombre']; ?></td>
+        <td><?php echo $row['hora']; ?></td>
+      </tr>
+    <?php } ?>
+    </tbody>
+  </table>
+</html>
+
+
+
