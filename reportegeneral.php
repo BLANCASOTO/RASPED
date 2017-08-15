@@ -23,7 +23,7 @@ body {
     <th>Nombre</th> 
     <th>Hora</th>
   </tr>
-    <body>
+    </body>
     <?php
    require_once ('conexion.php');
       // conexión
