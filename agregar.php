@@ -121,6 +121,8 @@ body {
     <table class="table">
       <tr align="center">
         <td>
+		<input type="Submit" name="enviar" value="Agregar integrante">
+//</form>
           <button type="submit" class="btn btn-primary">Insertar</button>
         </td>
       </tr>
