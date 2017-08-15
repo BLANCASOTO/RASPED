@@ -7,6 +7,16 @@ body {
     background-color: 	#00bc97;	
 
 }      
+
+    
+    <CENTER>
+<MARQUEE    WIDTH=40% BGCOLOR=#B2DFDB BEHAVIOR=alternate> <FONT FACE=arial COLOR=#9E9E9E SIZE=6> Reporte diario
+</CENTER>
+</MARQUEE> 
+<MARQUEE BEHAVIOR=alternate>
+    </MARQUEE>
+    
+    
     table {
     width:100%;
 }
@@ -32,12 +42,7 @@ table#t01 th {
        
 }
 
-<CENTER>
-<MARQUEE    WIDTH=40% BGCOLOR=#B2DFDB BEHAVIOR=alternate> <FONT FACE=arial COLOR=#9E9E9E SIZE=6> Reporte diario
-</CENTER>
-</MARQUEE> 
-<MARQUEE BEHAVIOR=alternate>
-    </MARQUEE> 
+ 
 </head>
  </style>
 
