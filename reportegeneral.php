@@ -22,21 +22,22 @@ body {
 <MARQUEE BEHAVIOR=alternate>
 <p style="text-align: left; "> <img src="https://image.ibb.co/jKFd9k/RASPED_BM_icono_Tarjetas.png " alt="imagen 3" width="25%">
 </MARQUEE>
+
     
+    
+       <table>
+  <tr>
+    <th>Dia</th>
+    <th>Nombre</th> 
+    <th>Hora</th>
+  </tr>
     
     <?php
    require_once ('conexion.php');
       // conexión
    $conexion = mysqli_connect($server, $user, $pass,$bd) 
    or die("Error de conexion  de la base de datos");
-    
-   <table>
-  <tr>
-    <th>Dia</th>
-    <th>Nombre</th> 
-    <th>Hora</th>
-  </tr>
-
+   
    //consulta
    $sql = "select P.id_personal, concat(C.fk_sede,C.cupo) as cupo, R.id_retardos, P.nombre_personal, P.apellido_m, P.apellido_p,
    F.fecha, R.hr_entrada, R.hr_comida_i, R.hr_comida_f, R.hr_salida
@@ -46,7 +47,6 @@ body {
    P.fk_cupo = C.id_cupo;";
    mysqli_set_charset($conexion, "utf8"); 
    
- 
  	$result_query = mysqli_query($conexion, $sql)) die();  
    while($row = mysqli_fetch_array($result)) { 
       
