@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html>
-<h1>
- 
-</h1>
 <head>
 <style>
-
 
 body {
     background-color: 	#00bc97;	
@@ -17,12 +13,12 @@ body {
 <MARQUEE    WIDTH=40% BGCOLOR=#B2DFDB BEHAVIOR=alternate> <FONT FACE=arial COLOR=#9E9E9E SIZE=6> Reporte diario
 </CENTER>
 </MARQUEE> 
-
 <MARQUEE BEHAVIOR=alternate>
-
+</style>
 </head>
-<body>
  
+<body>
+
 table {
     width:100%;
 }
