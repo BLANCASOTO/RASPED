@@ -15,8 +15,8 @@
    R.fk_fecha = F.id_fecha and
    P.fk_cupo = C.id_cupo;";
 
-   $result = $conn->query($sql);
-   $rows = $result->fetchAll();
+ //  $result = $conn->query($sql);
+   //$rows = $result->fetchAll();
 
 //   <!DOCTYPE html>
   // <html lang="en">
