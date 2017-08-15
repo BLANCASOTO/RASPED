@@ -70,7 +70,6 @@ body {
               <select class="form-control" id="sel1">
 
 		      
-		      <input type="Submit" name="enviar" value="Agregar integrante">
 		      
                 <?php
                 //pedir datos de base de datos
