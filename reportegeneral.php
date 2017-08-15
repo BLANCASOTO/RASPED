@@ -6,27 +6,14 @@
 body {
     background-color: 	#00bc97;	
 
-}
-</style>
-
-<CENTER>
-<MARQUEE    WIDTH=40% BGCOLOR=#B2DFDB BEHAVIOR=alternate> <FONT FACE=arial COLOR=#9E9E9E SIZE=6> Reporte diario
-</CENTER>
-</MARQUEE> 
-<MARQUEE BEHAVIOR=alternate>
-    </MARQUEE> 
-</head>
-    
-<body>
-    
-    
+}      
     table {
     width:100%;
 }
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
-    
+   
 }
 th, td {
     padding: 5px;
@@ -44,8 +31,16 @@ table#t01 th {
     ALIGN=center;
        
 }
-</style>
+
+<CENTER>
+<MARQUEE    WIDTH=40% BGCOLOR=#B2DFDB BEHAVIOR=alternate> <FONT FACE=arial COLOR=#9E9E9E SIZE=6> Reporte diario
+</CENTER>
+</MARQUEE> 
+<MARQUEE BEHAVIOR=alternate>
+    </MARQUEE> 
 </head>
+ </style>
+
 <body>
 
 
