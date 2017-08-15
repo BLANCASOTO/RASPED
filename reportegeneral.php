@@ -47,10 +47,11 @@ body {
       $Hora = $row['Hora'];
       
       echo"<tr>";
-      echo "<th>$Dia</th>";
-      echo"<th>$Nombre</th>";
-      echo "<th>$Hora</th>";
+      echo '<th>'.$Dia.</th>;
+      echo'<th>'.$Nombre.</th>;
+      echo '<th>'.$Hora.</th>;
       echo"</tr>";
+   }
           ?>
          </table>
    </html>
