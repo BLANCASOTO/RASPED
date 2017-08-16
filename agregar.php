@@ -79,10 +79,7 @@ body {
         <li class="active"><a href="#">Horarios</a></li>
       </ul>
       
-      <!-- Tabla Horarios de Tres columnas -->
-      <div class="row">
-            </select>
-          </td>
+      
           <td><!-- Puestos-->
             <label for="sel1">Puesto</label>
             <select class="form-control" id="sel1">
