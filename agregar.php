@@ -9,7 +9,9 @@ body {
 </style>
 </head>
 <body>
-	
+	<img src="https://image.ibb.co/h9rcNF/tarjetas.jpg" alt="Mountain View" style="float:right;width:30%;height:30%;"
+<p style="text-align: float:left; "></p>      
+		      
     <!-- Formulario Agregar Usuario -->
       <h4>Insertar Personal</h4>
             
@@ -122,9 +124,7 @@ body {
     </table>
   </form>
 	
-		<img src="https://image.ibb.co/h9rcNF/tarjetas.jpg" alt="Mountain View" style="float:right;width:30%;height:30%;"
-<p style="text-align: float:left; "></p>      
-		      
+		
                 <?php
                 //pedir datos de base de datos
                 require_once ('conexion.php');
