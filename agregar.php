@@ -76,7 +76,19 @@ body {
     </table>
   </form
 
-               
+               <ul class="nav nav-tabs" role="tablist">
+        <li class="active"><a href="#">Horarios</a></li>
+      </ul>
+      
+      <!-- Tabla Horarios de Tres columnas -->
+      <div class="row">
+
+        <!-- Todos Horarios -->
+        <div class="col-lg-4">
+          <h4>Horarios</h4>
+          <a href="content/horarios.php" class="btn btn-primary" role="button">Puestos</a>
+        </div>
+      </div></br>
 
             </select>
           </td>
