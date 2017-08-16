@@ -121,7 +121,9 @@ body {
       </tr>
     </table>
   </form>
-		      
+	
+		<img src="https://image.ibb.co/h9rcNF/tarjetas.jpg" alt="Mountain View" style="float:right;width:30%;height:30%;"
+<p style="text-align: float:left; "></p>      
 		      
                 <?php
                 //pedir datos de base de datos
