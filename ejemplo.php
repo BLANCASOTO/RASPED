@@ -23,6 +23,10 @@ if(!$result = mysqli_query($conexion, $query)){
 	die();
 }
 
+
+
+
+
 //ciclo while para extraer los datos y almacenarlos en el arreglo
 while($row = mysqli_fetch_array($result)){
 
@@ -30,7 +34,7 @@ while($row = mysqli_fetch_array($result)){
 $telefono=$row['tel'];
 $contrasena=$row['contrasena'];
 	}//while
-if ($contrasena=$pass)
+ if (password_verify($contrasena, $row['password'])) { 
 	{
 	else {h1<error de datos>
 }	
