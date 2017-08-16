@@ -33,6 +33,8 @@ body {
       <tr>
           
        <td align="center"><div  log"><a href="agregar.php"><img src="https://image.ibb.co/b3gMGa/agregar.png"Editar</a></div></td>
+           <td align="center"><div  log"><a href="editar.php"><img src="https://image.ibb.co/cFyPma/editar.png"reportes</a></div></td>
+<td align="center"><div  log"><a href="eliminar.php"><img src="https://image.ibb.co/ihEYCF/borrar.png"borrar</a></div></td>
         <td align="center"><div  log"><a href="buscar.php"><img src="https://image.ibb.co/j6bJUv/buscar.png"Editar</a></div></td>
     <td align="center"><div  log"><a href="reportegeneral.php"><img src="https://image.ibb.co/mUZQsF/icono_Tarjetas_circulo.png"Editar</a></div></td>
        
