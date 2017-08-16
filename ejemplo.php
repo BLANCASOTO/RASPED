@@ -13,8 +13,7 @@ $contrasena = md5($contrasena);
 
 $query = "select P.id_personal, concat(T.fk_lada,T.telefono) as telefono, P.contrasena
 from personal P, telefonos T
-where P.fk_telefono = T.id_telefono"
-;
+where P.fk_telefono = T.id_telefono";
 			
 //formato de datos utf8 (espanol)
 mysqli_set_charset($conexion,"utf8");
@@ -32,13 +31,13 @@ while($row = mysqli_fetch_array($result)){
  
 $telefono=$row['tel'];
 $contrasena=$row['contrasena'];
-	
+	{}//while
 if ($contrasena=$pass)
 	{
 	else {h1<error de datos>
 }	
 header('Location:menu.php');		
-		{}//while
+		
 
 
 //cierre de conexion
