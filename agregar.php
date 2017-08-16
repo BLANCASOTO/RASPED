@@ -5,15 +5,10 @@
 <style>
 body {
     background-color:#006064;
-
 	}
-
-	
-
 </style>
 </head>
 <body>
-	
 	
      <!-- Formulario Agregar Usuario -->
       <h4>Insertar Personal</h4>
@@ -38,9 +33,9 @@ body {
         <!--Segunda fila -->
         <table class="table">
           <tr>
-            <!-- <td>Contraseña 
+             <td>Contraseña 
               <input type="password" name="contrasena" id="contrasena" class="form-control" placeholder="contrasena" required>
-            </td> -->
+            </td> 
           </tr>
         </table>
 
