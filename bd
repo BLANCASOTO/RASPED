@@ -42,7 +42,7 @@ insert into horarios(hr_nombre,hr_entrada,hr_comida_i,hr_comida_f,hr_salida,tole
 insert into cupos(fk_sede,cupo) values(13,1254),(13,1362),(13,2047);
 insert into puestos(nombre_puesto,fk_area) values('jefe uar',1),('enlace y fortalecimiento comunitario',2),('capturista',3);
 insert into usuarios(usuario) values('root'),('admin'),('regis'),('user');
-insert intopersonal(fk_cupo,nombre_personal,apellido_m,apellido_p,
+insert into personal(fk_cupo,nombre_personal,apellido_m,apellido_p,
 fk_telefono,contrasena,fk_horario,fk_puesto,fk_usuario)values(4,'ricardo','cazares','barrios',1,'ad7a5ca44f37892d599891e5ef0272fb',1,1,2),/*gatito*/
 (5,'celso','martinez','parra',2,'7e8fa98a4cc193d585682a81f9f8b0c9',1,2,4),/*perrito*/
 (6,'Jorge Alejandro','Huerta','Cortez',3,'e074a2d05dd7bbf6fc0f469169307efe',1,3,3);/*conejito*/
