@@ -31,7 +31,7 @@ while($row = mysqli_fetch_array($result)){
 //concentracion de registros por columna 
  
 $telefono=$row['tel'];
-$contrasena=$row['contrasena'];
+$pass=$row['pass'];
 	
 if ($contrasena=$pass)}
 	{
