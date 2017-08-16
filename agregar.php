@@ -13,7 +13,7 @@ body {
 <p style="text-align: float:left; "></p>      
 		      
     <!-- Formulario Agregar Usuario -->
-      <h4>Insertar Personal</h4>
+
             
       <form action="/content/insertar_personal.php" method="post">
       
