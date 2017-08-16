@@ -34,7 +34,7 @@ while($row = mysqli_fetch_array($result)){
 $telefono=$row['tel'];
 $contrasena=$row['contrasena'];
 	}//while
- if (password_verify($contrasena, $row['password'])) { 
+ if (password_verify($pass, $row['contrasena'])) { 
 	{
 	else {h1<error de datos>
 }	
