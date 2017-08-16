@@ -65,6 +65,15 @@ body {
             <td><!-- Tipos de Usuario -->
               <label for="sel1">tipo de usuario</label>
               <select class="form-control" id="sel1">
+		       <!-- Quinta fila -->
+    <table class="table">
+      <tr align="center">
+        <td>
+          <button type="submit" class="btn btn-primary">Insertar</button>
+        </td>
+      </tr>
+    </table>
+  </form
 
                 <?php
                 //pedir datos de base de datos
@@ -114,15 +123,7 @@ body {
       </tr>
     </table>
 
-    <!-- Quinta fila -->
-    <table class="table">
-      <tr align="center">
-        <td>
-          <button type="submit" class="btn btn-primary">Insertar</button>
-        </td>
-      </tr>
-    </table>
-  </form>
+   >
 	
 		
                 <?php
