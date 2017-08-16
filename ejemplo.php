@@ -6,7 +6,7 @@ $conexion = mysqli_connect($server,$user,$pass,$bd) or die("error conexion");
 
 //solicitamos las variables
 $telefono = $_REQUEST['tel'];
-$contrasena = $_REQUEST['contrasena'];
+$pass = $_REQUEST['pass'];
 
 //generamos la consulta
 $contrasena = md5($contrasena);
@@ -31,7 +31,7 @@ while($row = mysqli_fetch_array($result)){
 //concentracion de registros por columna 
  
 $telefono=$row['tel'];
-$pass=$row['pass'];
+$contrasena=$row['contrasena'];
 	
 if ($contrasena=$pass)
 	{
