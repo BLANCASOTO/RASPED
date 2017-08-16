@@ -15,7 +15,8 @@ body {
     <!-- Formulario Agregar Usuario -->
 
             
-      <form action="/content/insertar_personal.php" method="post">
+	
+      <form action="agrega.php" method="post">
       
         <!-- Primer fila -->
         <table class="table">
