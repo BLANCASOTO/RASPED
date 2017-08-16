@@ -24,14 +24,16 @@ $fk_horario = '';
   //estándar de codificación Unicode Transformation 8 bits para compatibilidad ASCII
   mysqli_set_charset($conexion, "utf8");
   //consultas - inserccion de cupos y telefonos
+  $query_insert_nombre_personal = "insert ignore into personal(nombre_personal) values ('$nombre_personal')";
   $query_insert_sede = "insert ignore into sedes(id_sede) values ('$sede')";
   $query_insert_cupo = "insert into cupos(fk_sede,cupo) values ('$sede','$cupo')";
-  $query_insert_lada = "insert ignore into ladas(id_lada) values ('$lada')";
+  $query_insert_lada = "insert ignore into ladas(id_lada) values ('$lada')"; 
   $query_insert_telefono = "insert into telefonos(fk_lada,telefono) values ('$lada','$telefono')";
   //ejecucion - inserccion de cupos y telefonos
-  $result_insert_sede = mysqli_query($conexion, $query_insert_sede) or die('result_insert_sede Error1:'.mysqli_error1());
-  $result_insert_cupo = mysqli_query($conexion, $query_insert_cupo) or die('result_insert_cupo Error2:'.mysqli_error());
-  $result_insert_lada = mysqli_query($conexion, $query_insert_lada) or die('result_insert_lada Error3:'.mysqli_error());
+  $result_insert_nombre_personal = mysquli_query($conexion,$query_insert_nombre_personal) or die ('result_insert_nombre_personal':'.errorennombre());
+  $result_insert_sede = mysqli_query($conexion, $query_insert_sede) or die('result_insert_sede Error:'.mysqli_error());
+  $result_insert_cupo = mysqli_query($conexion, $query_insert_cupo) or die('result_insert_cupo Error:'.mysqli_error());
+  $result_insert_lada = mysqli_query($conexion, $query_insert_lada) or die('result_insert_lada Error:'.mysqli_error());
   $result_insert_telef = mysqli_query($conexion, $query_insert_telefono) or die('result_insert_telef Error4:'.mysqli_error());
   //encriptacion md5 de contraseña
 
