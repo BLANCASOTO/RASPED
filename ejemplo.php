@@ -33,7 +33,7 @@ while($row = mysqli_fetch_array($result)){
 $telefono=$row['tel'];
 $contrasena=$row['contrasena'];
 	
-if ($contrasena=$pass)}
+if ($pass=$contrasena)
 	{
 	else {h1<error de datos>
 }	
