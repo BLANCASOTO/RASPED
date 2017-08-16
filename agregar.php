@@ -10,10 +10,10 @@ body {
 </head>
 <body>
 	
-     <!-- Formulario Agregar Usuario -->
+    <!-- Formulario Agregar Usuario -->
       <h4>Insertar Personal</h4>
             
-      <form action="agrega.php" method="post">
+      <form action="/content/insertar_personal.php" method="post">
       
         <!-- Primer fila -->
         <table class="table">
@@ -33,12 +33,10 @@ body {
         <!--Segunda fila -->
         <table class="table">
           <tr>
-		  <!-- Nombre Personal 
-             <td>Contraseña 
+            <td><!-- Contraseña -->
               <input type="password" name="contrasena" id="contrasena" class="form-control" placeholder="contrasena" required>
             </td> 
           </tr>
--->
         </table>
 
         <!-- Tercera fila -->
@@ -66,6 +64,63 @@ body {
               <label for="sel1">tipo de usuario</label>
               <select class="form-control" id="sel1">
 
+                <?php
+                //pedir datos de base de datos
+                require_once ('content/mysql-login.php');
+                //Creamos la conexión
+                $conexion = mysqli_connect($server, $user, $pass,$bd) 
+                or die("Ha sucedido un error inexperado en la conexion de la base de datos");
+                //generamos la consulta
+                $sql = "SELECT hr_nombre from horarios";
+                //estándar de codificación Unicode Transformation 8 bits para compatibilidad ASCII
+                mysqli_set_charset($conexion, "utf8");
+                //arrojar error de consulta en caso de serlo asi
+                if(!$result = mysqli_query($conexion, $sql)) die();
+                //extraccion de registros mediante un ciclo while
+                while($row = mysqli_fetch_array($result)){
+                //extraccion y almacenamiento
+                $horario = $row['hr_nombre'];
+                //impresion de registro en formato html
+                echo "<option>" . $horario . "</option>";
+              }
+              ?>
+
+            </select>
+          </td>
+          <td><!-- Puestos-->
+            <label for="sel1">Puesto</label>
+            <select class="form-control" id="sel1">
+
+              <?php
+              //generamos la consulta
+              $sql = "SELECT nombre_puesto from puestos";
+              //arrojo de error al ejecutar del query o consulta en caso de serlo
+              if(!$result = mysqli_query($conexion, $sql)) die();
+              //extraccion de registros por un ciclo
+              while($row = mysqli_fetch_array($result)){ 
+              //amacenamiento de registro
+              $puesto = $row['nombre_puesto'];
+              //impresion de registro en formato html
+              echo "<option>" . $puesto . "</option>";
+            }
+            //desconeccion de la base de datos
+            $close = mysqli_close($conexion) or die('Error: '.mysqli_error());
+            ?>
+
+          </select>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Quinta fila -->
+    <table class="table">
+      <tr align="center">
+        <td>
+          <button type="submit" class="btn btn-primary">Insertar</button>
+        </td>
+      </tr>
+    </table>
+  </form>
 		      
 		      
                 <?php
