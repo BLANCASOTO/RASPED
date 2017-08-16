@@ -1,17 +1,7 @@
 <?php
   //se almacenan las variables a insertar
 
-  //llamar mysql-login.php que contiene los datos de la base de datos para conectar
-  require_once ('conexion.php');
-  //ejecucion de conexion o devolucion de error
-  $conexion = mysqli_connect($server, $user, $pass,$bd);;
-  if (!$conexion) {
-    die('Connect Error: '.mysqli_connect_error());
-  }
-  //estándar de codificación Unicode Transformation 8 bits para compatibilidad ASCII
-  mysqli_set_charset($conexion, "utf8");
-
-
+ 
 
   $nombre_personal = $_POST['nombre_personal'];
   $apellido_m = $_POST['apellido_m'];
@@ -25,7 +15,16 @@
   $puesto = $_POST['puesto']; 
   $tipo = $_POST['tipo']; 
 $fk_horario = '';
-  
+ 
+ //llamar mysql-login.php que contiene los datos de la base de datos para conectar
+  require_once ('conexion.php');
+  //ejecucion de conexion o devolucion de error
+  $conexion = mysqli_connect($server, $user, $pass,$bd);;
+  if (!$conexion) {
+    die('Connect Error: '.mysqli_connect_error());
+  }
+  //estándar de codificación Unicode Transformation 8 bits para compatibilidad ASCII
+  mysqli_set_charset($conexion, "utf8");
 
   //consultas - inserccion de cupos y telefonos
   $query_insert_nombre_personal = "insert ignore into personal(nombre_personal) values ('$nombre_personal')";
