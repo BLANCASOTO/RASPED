@@ -144,7 +144,7 @@ Esta pagina solo es para usuarios registrados
 		  </p>
 	
 		  <p>Contraseña
-  <input id = "contrasena" name = "contrasena" type="password" required>
+  <input id = "pass" name = "pass" type="password" required>
 		  </p>
 		  <p>&nbsp;</p>
 		  <button class="button"><span>Ingresar </span></button>
