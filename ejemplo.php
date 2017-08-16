@@ -6,7 +6,7 @@ $conexion = mysqli_connect($server,$user,$pass,$bd) or die("error conexion");
 
 //solicitamos las variables
 $telefono = $_REQUEST['tel'];
-$contrasena = $_REQUEST['contrasena'];
+$pass = $_REQUEST['contrasena'];
 
 //generamos la consulta
 $contrasena = md5($contrasena);
@@ -24,24 +24,22 @@ if(!$result = mysqli_query($conexion, $query)){
 	die();
 }
 
-
-//creacion del array contenedor de registros
-$arraydatos = array();
-
 //ciclo while para extraer los datos y almacenarlos en el arreglo
 while($row = mysqli_fetch_array($result)){
 
-	
-	
+		
 //concentracion de registros por columna 
  
 $telefono=$row['tel'];
 $contrasena=$row['contrasena'];
 	
-//poblacion del arreglo
-$arraydatos[]=array('telefono'=>$telefono,'contrasena'=>$contrasena);
+if ($contrasena=$pass)}
+	{
+	else {h1<error de datos>
+}	
 header('Location:menu.php');		
-}//while
+		{}//while
+
 
 //cierre de conexion
 $close = mysqli_close($conexion) or die("error en desconexion");
