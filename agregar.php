@@ -81,14 +81,6 @@ body {
       
       <!-- Tabla Horarios de Tres columnas -->
       <div class="row">
-
-        <!-- Todos Horarios -->
-        <div class="col-lg-4">
-          <h4>Horarios</h4>
-          <a href="content/horarios.php" class="btn btn-primary" role="button">Puestos</a>
-        </div>
-      </div></br>
-
             </select>
           </td>
           <td><!-- Puestos-->
@@ -121,9 +113,6 @@ body {
           <td><!-- Puestos-->
             <label for="sel1">Puesto</label>
             <select class="form-control" id="sel1">
-
-           
-
           </select>
         </td>
       </tr>
