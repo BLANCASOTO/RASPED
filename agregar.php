@@ -14,8 +14,6 @@ body {
 		      
     <!-- Formulario Agregar Usuario -->
 
-            
-	
       <form action="agrega.php" method="post">
       
         <!-- Primer fila -->
@@ -69,9 +67,7 @@ body {
 		       <!-- Quinta fila -->
     <table class="table">
       <tr align="center">
-        <td>
-          <button type="submit" class="btn btn-primary">Insertar</button>
-        </td>
+        
       </tr>
     </table>
   </form
@@ -80,6 +76,10 @@ body {
           <td><!-- Puestos-->
             <label for="sel1">Puesto</label>
             <select class="form-control" id="sel1">
+		    
+		    <td>
+          <button type="submit" class="btn btn-primary">Insertar</button>
+        </td>
 
               <?php
               //generamos la consulta
