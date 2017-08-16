@@ -75,7 +75,6 @@ body {
       </tr>
     </table>
   </form
-
                <ul class="nav nav-tabs" role="tablist">
         <li class="active"><a href="#">Horarios</a></li>
       </ul>
