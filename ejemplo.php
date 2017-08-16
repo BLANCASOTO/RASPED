@@ -26,20 +26,16 @@ if(!$result = mysqli_query($conexion, $query)){
 //ciclo while para extraer los datos y almacenarlos en el arreglo
 while($row = mysqli_fetch_array($result)){
 
-		
 //concentracion de registros por columna 
- 
 $telefono=$row['tel'];
 $contrasena=$row['contrasena'];
-	{}//while
+	}//while
 if ($contrasena=$pass)
 	{
 	else {h1<error de datos>
 }	
 header('Location:menu.php');		
 		
-
-
 //cierre de conexion
 $close = mysqli_close($conexion) or die("error en desconexion");
 
