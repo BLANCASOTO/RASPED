@@ -33,10 +33,12 @@ body {
         <!--Segunda fila -->
         <table class="table">
           <tr>
+		  <!-- Nombre Personal 
              <td>Contraseña 
               <input type="password" name="contrasena" id="contrasena" class="form-control" placeholder="contrasena" required>
             </td> 
           </tr>
+-->
         </table>
 
         <!-- Tercera fila -->
