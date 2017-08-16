@@ -49,6 +49,7 @@ echo "<strong>El número aleatorio generado en PHP es:</strong> ".$numeroAleator
   
  
   $contrasena = md5($contrasena);
+$LetraAleatora,$numeroAleatorio=($contrasena)
   //query para consulta de fk_cupo y fk_telefono
   $query_select_fk_cupo = "SELECT id_cupo from cupos WHERE fk_sede = $sede and cupo = $cupo";
   $query_select_fk_telefono = "SELECT id_telefono from telefonos WHERE fk_lada = $lada and telefono = $telefono";
