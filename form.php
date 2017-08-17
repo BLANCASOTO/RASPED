@@ -32,8 +32,8 @@
       <!-- Jumbotron contenedor de titulo icono y descripcion -->
       <div class="jumbotron">
         <h1>RASPED</h1>
-        <img src="https://k61.kn3.net/4/9/C/3/3/1/5A6.png" class="img-responsive" alt="Cinque Terre">
-        <p class="lead">Espacio para la consulta y generación de archivos JSON, desde la base de datos remota de RASPED.</p>
+        <img src="https://image.ibb.co/e1JiRa/RASPED_BM_icono_Simbolo_Letras.png" class="img-responsive" alt="Cinque Terre">
+        <p class="lead">Espacio para la consulta y generación de archivos, desde la base de datos de RASPED.</p>
       </div>
 
       <!--///////////////////////////////////////////////////////////////////////////-->
