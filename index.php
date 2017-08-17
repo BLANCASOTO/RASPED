@@ -20,7 +20,7 @@ body {
 </head>
 <body>
 
-<p style="text-align: center; "> <img src=https://image.ibb.co/gt2gek/RASPED_BM_icono_Simbolo_Letras.png alt="imagen 3" width="30%">
+<p style="text-align: center; "> <img src=https://image.ibb.co/e1JiRa/RASPED_BM_icono_Simbolo_Letras.png alt="imagen 3" width="30%">
 
 
 
